@@ -9,7 +9,8 @@
 </head>
 
 <body>
-<div class="container">
+
+<div id="entry-page">
 <h1>Sprints & Hurdles C17</h1>
 <h2>April 8th 2018</h2>
 
@@ -99,7 +100,7 @@
 <p class="displayPicked" id="event2Entered"></p>
 <p class="displayPicked" id="event3Entered"></p>
 </pre>
-<input type="button" id="myButton" value="Continue"/>
+<input type="button" id="contButton" value="Continue"/>
 <input type="button" id="backButton" value="Back"/>
 
 </nav>
@@ -135,6 +136,28 @@
 
 </div>
 
+<div id="exit-page" style="display:none;" > 
+<p>Click Send to send entry or Abort to go back.</p>
+
+<form id="contactform" action="https://formspree.io/gratimhow@aol.com" method="POST">
+
+  <input type="submit" value="Send">   <button type="button" onclick="StartPage()">Abort</button>
+  <input type="text" id="myEntry" name="entry" placeholder="Entry details" size = "90" readonly style="display:none">
+  <input type="hidden" name="_next" value="SandHInfoPage.html" />
+  <input type="hidden" name="_subject" value="Sprints and Hurdles Entry" />
+  <input type="text" name="_gotcha" style="display:none" />
+
+</form>
+
+<p>Entries will be confirmed by email on receipt of your payment.</p>
+<p>Entry fee &pound;5.00</p>
+<p>Payment by Bank transfer to a/c 00112070 Sort Code 60-10-15 using Athlete name in the transaction reference.</p>
+<p>OR</p> 
+<p>Cheque payable to Yate & District AC to :- 
+Bibstone Cottage, Cromhall, Wotton-under-edge, Glos GL12 8AE.<br>Do not send recorded delivery items.</p>
+       
+</div>
+
 <script >
 
 //Main Sprints & Hurdles entry script
@@ -160,7 +183,7 @@ for (var i=0; i<events.length; i++) {
 }
 
 //get a reference to the submit button and add event listener 
-var myBtn = document.getElementById('myButton');
+var myBtn = document.getElementById('contButton');
 myBtn.addEventListener('click', EntryDetail);
 
 //get a reference to the back button and add event listener 
@@ -259,9 +282,11 @@ function EntryDetail() {
         }
         totEvents = 0; 
 
-        //Pass the details to the Exit page
-        var queryString = "?" + detailString;
-        window.location.href = "SandHExitPage.html" + queryString;
+        //Populate the Exit page form
+        var contactform = document.getElementById('contactform');
+        document.getElementById("myEntry").defaultValue = detailString  ;
+        document.getElementById("entry-page").style.display = "none";
+        document.getElementById("exit-page").style.display = "block";
 
       }
  
@@ -443,6 +468,19 @@ function validateDate(inputText)
   }  
 }  
 
+function EntryPage() {
+        document.getElementById("entry-page").style.display = "block";
+        document.getElementById("exit-page").style.display = "none";
+}
+function ExitPage() {
+        document.getElementById("entry-page").style.display = "none";
+        document.getElementById("exit-page").style.display = "block";
+}
+
+
+function StartPage() {
+    window.location.assign("SandHInfoPage.html")
+}
 </script>
 
 </body>
