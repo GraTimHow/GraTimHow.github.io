@@ -32,10 +32,10 @@ aside {
 
 function EnterPage() {
   // Entries are closed 
-  var closeDate = new Date("2018-04-05");
+  var closeDate = new Date("2018-03-15");
   var today = new Date();
   if (today > closeDate ) {
-     document.getElementById("message").innerHTML = "Entries are now closed";
+     document.getElementById("message").innerHTML = "<mark>* * * Entries are now closed * * *</mark>";
   }
   else {
      window.location.assign("SandHEntryPage.html")
