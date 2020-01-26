@@ -21,23 +21,69 @@ article {
     text-align: left;
 }
 
+aside {
+    margin-left: 400px;
+    padding: 1em;
+    overflow: hidden;
+}
 </style>
+
+<script>
+
+function EnterPage() {
+  // Entries are closed 
+  var closeDate = new Date("2020-03-29");
+  var today = new Date();
+  if (today > closeDate ) {
+     document.getElementById("message").innerHTML = "<mark>* * * Entries are now closed * * *</mark>";
+  }
+  else {
+     window.location.assign("SandHEntryPage.html")
+  }
+}
+
+</script>
 
 </head>
 
 <body> 
 
-<h1>Sprints & Hurdles C20 - 2020</h1>
+<h1>Sprints & Hurdles C20 - Sunday April 5th 2020</h1>
 
 <div class="container">
 
 <article>
-<p>Yate track is back and we've wished Cleveland Land Services a hearty GOOD RIDDANCE!</p>
-<p>Sprints & Hurdles Challenge will return in April 2020.</p> 
-<p>We hope to see you there. Further details here in early 2020.</p>
+<p>Your entry will be processed and confirmed by email on receipt of your payment.</p>
+<p>Entry fee &pound;5.00 per athlete, Entry closing date Sunday March 29th 2020 or sooner if the entry limit of 200 competitors is reached.</p>
+<p>Athletes must be age 10 or over on the day to be eligible to enter.</p>
+<p>Payment by Bank transfer to a/c 00112070 Sort Code 60-10-15 using Athlete name in the transaction reference.</p>
+<p>Cheque (athlete name on reverse) payable to Yate & District AC to :-</p> 
+<p>Bibstone Cottage, Cromhall, Wotton-under-edge, Glos GL12 8AE. Do not send recorded delivery items.</p>
+<p>Collect numbers on the day. There are no Entries or Payments on the day.</p>
+<p>Once entries have closed, Heats seeded and Final timetable produced, entries will not be changed. Heats are run slowest to fastest.</p>
+<p id="message">Click Enter Button to make an entry</p>
 
+<button type="button" onclick="EnterPage()">Enter</button>
 </article>
 
+<aside>
+<h4>Provisional Timetable :-</h4>
+
+<ul id="eventList" >
+<li><a>13:00 - 60m</a></li>
+<li><a>13:40 - 300m Hurdles</a></li>
+<li><a>13:50 - 400m Hurdles</a></li>
+<li><a>14:00 - 100m</a></li>
+<li><a>15:30 - 200m</a></li>
+<li><a>16:50 - 70m Hurdles</a></li>
+<li><a>16:55 - 75m Hurdles</a></li>
+<li><a>17:05 - 80m Hurdles</a></li>
+<li><a>17:15 - 100m Hurdles</a></li>
+<li><a>17:25 - 110m Hurdles</a></li>
+<li><a>17:30 - 300m</a></li>
+<li><a>17:45 - 400m</a></li>
+</ul>
+</aside>
 </div>
 </body>
 
