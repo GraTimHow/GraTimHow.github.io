@@ -11,8 +11,8 @@
 <body>
 
 <div id="Common"> 
-   <h1>Sprints & Hurdles C20</h1>
-   <h2>April 5th 2020</h2>
+   <h1>Sprints & Hurdles C22</h1>
+   <h2>April 3rd 2022</h2>
 </div>
 
 <div id="entry-page">
@@ -59,6 +59,7 @@
   <option value="CWMB">Cwmbran Harriers</option>
   <option value="DART">Dartford Harriers</option>
   <option value="DVZS">Devizes Moonrakers</option>
+  <option value="DSWP">Disability Sport Wales Para Academy</option>
   <option value="DWNS">Downend School</option>
   <option value="DASH">Dudley & Stourbridge Harriers</option>
   <option value="ECRN">East Cornwall Harriers</option>
@@ -68,6 +69,7 @@
   <option value="GSCH">Gloucestershire Schools</option>
   <option value="GRM">Grimsby Harriers AC</option>
   <option value="LAVA">Lavington Athletics</option>
+  <option value="LLAN">Llanelli Athletics Club</option>
   <option value="LLIS">Lliswerry Runners</option>
   <option value="MARL">Marlborough AC</option>
   <option value="MEND">Mendip AC</option>
@@ -83,6 +85,7 @@
   <option value="POOR">Poole Runners</option>
   <option value="RADL">Radley AC</option>
   <option value="READ">Reading AC</option>
+  <option value="RHYV">Rhymney Valley</option>
   <option value="SGSC">SGS College</option>
   <option value="SGAC">South Glos AC</option>
   <option value="SOU">Southampton AC</option>
@@ -92,6 +95,7 @@
   <option value="SWIN">Swindon Harriers</option>
   <option value="TNTN">Taunton AC</option>
   <option value="TMB">Team Bath</option>
+  <option value="TKT">Team Kennet Triathlon & AC</option>
   <option value="UGLO">University of Gloucestershire</option>
   <option value="UWE">University of West England</option>
   <option value="WNCH">Winchester & District AC</option>
@@ -105,6 +109,7 @@
 <p class="displayPicked" id="event1Entered"></p>
 <p class="displayPicked" id="event2Entered"></p>
 <p class="displayPicked" id="event3Entered"></p>
+<h3 id="feeSoFar"></h3>
 </pre>
 <input type="button" id="contButton" value="Continue"/>
 <input type="button" id="backButton" value="Back"/>
@@ -115,23 +120,24 @@
 <h4>Select / de-select up to 3 events:</h4>
 
 <ul id="eventList" >
-<li><a data-eventNum="1" data-description = "60 Metres" id="60M" class="available">60m</a></li>
-<li><a data-eventNum="2" data-description = "300m Hurdles (76.2)" id="300MH762" class="available">300m Hurdles (76.2)</a></li>
-<li><a data-eventNum="3" data-description = "400m Hurdles (76.2)" id="400MH762" class="available">400m Hurdles (76.2)</a></li>
-<li><a data-eventNum="4" data-description = "400m Hurdles (84.0)" id="400MH840" class="available">400m Hurdles (84.0)</a></li>
-<li><a data-eventNum="5" data-description = "400m Hurdles (91.4)" id="400MH(910)" class="available">400m Hurdles (91.0)</a></li>
-<li><a data-eventNum="6" data-description = "100 Metres" id="100M" class="available">100m</a></li>
-<li><a data-eventNum="7" data-description = "200 Metres" id="200M" class="available">200m</a></li>
-<li><a data-eventNum="8" data-description = "70m Hurdles (68.5)" id="70MH685" class="available">70m Hurdles (68.5)</a></li>
-<li><a data-eventNum="9" data-description = "75m Hurdles (76.2)" id="75MH762" class="available">75mHurdles (76.2)</a></li>
-<li><a data-eventNum="10" data-description = "80m Hurdles (76.2)" id="80MH762" class="available">80m Hurdles (76.2)</a></li>
-<li><a data-eventNum="11" data-description = "80m Hurdles (84.0)" id="80MH840" class="available">80m Hurdles (84.0)</a></li>
-<li><a data-eventNum="12" data-description = "100m Hurdles (84.0)" id="100MH840" class="available">100m Hurdles (84.0)</a></li>
-<li><a data-eventNum="13" data-description = "100m Hurdles (91.4)" id="100MH910" class="available">100m Hurdles (91.4)</a></li>
-<li><a data-eventNum="14" data-description = "110m Hurdles (99.0)" id="110MH990" class="available">110m Hurdles (99.0)</a></li>
-<li><a data-eventNum="15" data-description = "110m Hurdles (106.7)" id="110MH1067" class="available">110m Hurdles (106.7)</a></li>
-<li><a data-eventNum="16" data-description = "300 Metres" id="300M" class="available">300m</a></li>
-<li><a data-eventNum="17" data-description = "400 Metres" id="400M" class="available">400m</a></li>
+
+<li><a data-eventNum="1" data-description = "70m Hurdles (68.5)" id="70MH685" class="available">70m Hurdles(68.5)</a></li>
+<li><a data-eventNum="2" data-description = "75m Hurdles (76.2)" id="75MH762" class="available">75mHurdles(76.2)</a></li>
+<li><a data-eventNum="3" data-description = "80m Hurdles (76.2)" id="80MH762" class="available">80m Hurdles(76.2)</a></li>
+<li><a data-eventNum="4" data-description = "80m Hurdles (84.0)" id="80MH840" class="available">80m Hurdles(84.0)</a></li>
+<li><a data-eventNum="5" data-description = "100m Hurdles (84.0)" id="100MH840" class="available">100m Hurdles(84.0)</a></li>
+<li><a data-eventNum="6" data-description = "100m Hurdles (91.4)" id="100MH910" class="available">100m Hurdles(91.4)</a></li>
+<li><a data-eventNum="7" data-description = "110m Hurdles (99.0)" id="110MH990" class="available">110m Hurdles(99.0)</a></li>
+<li><a data-eventNum="8" data-description = "110m Hurdles (106.7)" id="110MH1067" class="available">110m Hurdles(106.7)</a></li>
+<li><a data-eventNum="9" data-description = "300 Metres" id="300M" class="available">300m</a></li>
+<li><a data-eventNum="10" data-description = "400 Metres" id="400M" class="available">400m</a></li>
+<li><a data-eventNum="11" data-description = "100 Metres" id="100M" class="available">100m</a></li>
+<li><a data-eventNum="12" data-description = "200 Metres" id="200M" class="available">200m</a></li>
+<li><a data-eventNum="13" data-description = "60 Metres" id="60M" class="available">60m</a></li>
+<li><a data-eventNum="14" data-description = "300m Hurdles (76.2)" id="300MH762" class="available">300m Hurdles(76.2)</a></li>
+<li><a data-eventNum="15" data-description = "400m Hurdles (76.2)" id="400MH762" class="available">400m Hurdles(76.2)</a></li>
+<li><a data-eventNum="16" data-description = "400m Hurdles (84.0)" id="400MH840" class="available">400m Hurdles(84.0)</a></li>
+<li><a data-eventNum="17" data-description = "400m Hurdles (91.4)" id="400MH(910)" class="available">400m Hurdles(91.0)</a></li>
 </ul>
 
 </article>
@@ -143,7 +149,7 @@
 <div id="exit-page" style="display:none;" > 
 <p>Click Send to send entry or Abort to go back.</p>
 
-<form id="contactform" action="https://formspree.io/gratimhow@aol.com" method="POST">
+<form id="contactform" action="https://formspree.io/f/mgedvdqz" method="POST">
 
   <input type="submit" value="Send">   <button type="button" onclick="StartPage()">Abort</button>
   <input type="text" id="myEntry" name="entry" placeholder="Entry details" size = "90" readonly style="display:none">
@@ -154,12 +160,9 @@
 </form>
 
 <p>Entries will be confirmed by email on receipt of your payment.</p>
-<p>Entry fee &pound;5.00 per athlete</p>
-<p>Payment by Bank transfer to a/c 00112070 Sort Code 60-10-15 using Athlete name in the transaction reference.</p>
-<p>OR</p> 
-<p>Cheque payable to Yate & District AC to :- 
-Bibstone Cottage, Cromhall, Wotton-under-edge, Glos GL12 8AE.<br>Do not send recorded delivery items.</p>
-       
+<h2 id="myFee">Your entry fee is £5</h2>
+<p>Payment by Bank transfer to a/c number 00112070 Sort Code 60-10-15 a/c name G Howell - with Athlete name as a transaction reference.</p>
+
 </div>
 
 <script >
@@ -167,7 +170,7 @@ Bibstone Cottage, Cromhall, Wotton-under-edge, Glos GL12 8AE.<br>Do not send rec
 //Main Sprints & Hurdles entry script
 
 //Initialise some variables
-competitionDate = new Date("2020-04-05");
+competitionDate = new Date("2022-04-03");
 var year = competitionDate.getFullYear();
 var month = competitionDate.getMonth();
 var day = competitionDate.getDate();
@@ -209,13 +212,14 @@ function EntryDetail() {
       var telephone = document.getElementById("telephone").value;
       var ngbnum = document.getElementById("ngbnum").value;
       var IPCcat = document.getElementById("IPCcat").value;
-      //
       var e = document.getElementById("club");
       clubCode = e.options[e.selectedIndex].value;
       clubDesc = e.options[e.selectedIndex].text;
 
       // Calling validation function
       if (validation()) {
+        forename = ucase(forename);
+        surname = ucase(surname);
         gender = ucase(gender);
 
         // Set the date variables
@@ -265,6 +269,14 @@ function EntryDetail() {
           eventsDesc[i - 1] = "*";
         }  
 
+        //Calculate entry fee and set the display element Id value
+        if (totEvents == 1) {var entryFee = "£5";}
+        else if (totEvents == 2) {var entryFee = "£8";}
+        else if (totEvents == 3) {var entryFee = "£10";}
+        else {var entryFee = "£5";}
+        document.getElementById("myFee").innerHTML = "Your entry fee is " + entryFee;
+
+        //Create the .csv string for the Formspree form 
         var detailString = forename + ',' + surname + ',' + gender + category   + ',' 
         + dobString + ',' + clubDesc + ' (' + clubCode + ')'
         + ',' + email + ',' + telephone + ',' + ngbnum + ',' + IPCcat 
@@ -288,7 +300,7 @@ function EntryDetail() {
 
         //Populate the Exit page form
         var contactform = document.getElementById('contactform');
-        document.getElementById("myEntry").defaultValue = detailString  ;
+        document.getElementById("myEntry").defaultValue = detailString;
         document.getElementById("entry-page").style.display = "none";
         document.getElementById("exit-page").style.display = "block";
 
@@ -362,13 +374,19 @@ document.getElementById("event3Entered").innerHTML = "";
 
 if (totEvents >= 1) {
   document.getElementById("event1Entered").innerHTML = eventsDesc[0] + " (" + performances[0] + ")";
+  var entryFee = "£5";
 }
 if (totEvents >= 2) {
   document.getElementById("event2Entered").innerHTML = eventsDesc[1] + " (" + performances[1] + ")";
+  var entryFee = "£8";
 }
 if (totEvents == 3) {
   document.getElementById("event3Entered").innerHTML = eventsDesc[2] + " (" + performances[2] + ")";
+  var entryFee = "£10";
 }
+
+//Set the display element Id value
+document.getElementById("feeSoFar").innerHTML = "Entry fee " + entryFee;
 
 }
 
