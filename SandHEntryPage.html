@@ -11,8 +11,8 @@
 <body>
 
 <div id="Common"> 
-   <h1>Sprints & Hurdles C22</h1>
-   <h2>April 3rd 2022</h2>
+   <h1>Sprints & Hurdles C23</h1>
+   <h2>April 16th 2023</h2>
 </div>
 
 <div id="entry-page">
@@ -28,7 +28,7 @@
  Gender M/F   : <input type="text" id = "gender" maxlength = "1" size = "1" required><br>
  E-mail       : <input type="email" id="email" required><br>
  Telephone    : <input type="tel" id="telephone" maxlength = "12"><br>
-<div class="NGBtip"> NGB Registration number: <span class="NGBtiptext">National Governing Body (England/Welsh Athletics)</span></div> <input type="text" id="ngbnum" maxlength = "7" size = "6"><br>
+<div class="NGBtip"> NGB Registration number: <span class="NGBtiptext">National Governing Body (England/Welsh Athletics)</span></div> <input type="text" id = "ngbnum" maxlength = "7" size = "6" required><br>
 <div class="IPCtip"> IPC Classification : <span class="IPCtiptext">International Paralympic Committee</span></div> <input type="text" id = "IPCcat" maxlength = "3" size = "4"> <br>
  Club: <select id="club">
   <option value=" ">Unattached</option>
@@ -43,6 +43,7 @@
   <option value="BRCK">Bracknell AC</option>
   <option value="BREC">Brecon AC</option>
   <option value="BRDG">Bridgend AC</option>
+  <option value="B&H">Brighton & Hove AC</option>
   <option value="B&W">Bristol & West AC</option>
   <option value="BUNI">Bristol University</option>
   <option value="BROM">Bromsgrove & Redditch AC</option>
@@ -67,6 +68,8 @@
   <option value="FOD">Forest of Dean AC</option>
   <option value="GLOS">Gloucester AC</option>
   <option value="GSCH">Gloucestershire Schools</option>
+  <option value="HAL">Halesowen AC</option>
+  <option value="HRFD">Hereford AC</option>
   <option value="GRM">Grimsby Harriers AC</option>
   <option value="LAVA">Lavington Athletics</option>
   <option value="LLAN">Llanelli Athletics Club</option>
@@ -111,7 +114,7 @@
 <p class="displayPicked" id="event3Entered"></p>
 <h3 id="feeSoFar"></h3>
 </pre>
-<input type="button" id="contButton" value="Continue"/>
+<input type="button" id="contButton" value="Done"/>
 <input type="button" id="backButton" value="Back"/>
 
 </nav>
@@ -120,24 +123,24 @@
 <h4>Select / de-select up to 3 events:</h4>
 
 <ul id="eventList" >
-
-<li><a data-eventNum="1" data-description = "70m Hurdles (68.5)" id="70MH685" class="available">70m Hurdles(68.5)</a></li>
-<li><a data-eventNum="2" data-description = "75m Hurdles (76.2)" id="75MH762" class="available">75mHurdles(76.2)</a></li>
-<li><a data-eventNum="3" data-description = "80m Hurdles (76.2)" id="80MH762" class="available">80m Hurdles(76.2)</a></li>
-<li><a data-eventNum="4" data-description = "80m Hurdles (84.0)" id="80MH840" class="available">80m Hurdles(84.0)</a></li>
-<li><a data-eventNum="5" data-description = "100m Hurdles (84.0)" id="100MH840" class="available">100m Hurdles(84.0)</a></li>
-<li><a data-eventNum="6" data-description = "100m Hurdles (91.4)" id="100MH910" class="available">100m Hurdles(91.4)</a></li>
-<li><a data-eventNum="7" data-description = "110m Hurdles (99.0)" id="110MH990" class="available">110m Hurdles(99.0)</a></li>
-<li><a data-eventNum="8" data-description = "110m Hurdles (106.7)" id="110MH1067" class="available">110m Hurdles(106.7)</a></li>
+<li><a data-eventNum="1" data-description = "70m Hurdles (68.5)" id="70MH685" class="available">70m Hurdles(U13G)</a></li>
+<li><a data-eventNum="2" data-description = "75m Hurdles (76.2)" id="75MH762" class="available">75mHurdles(U13B/G)</a></li>
+<li><a data-eventNum="3" data-description = "80m Hurdles (76.2)" id="80MH762" class="available">80m Hurdles(U17W)</a></li>
+<li><a data-eventNum="4" data-description = "80m Hurdles (84.0)" id="80MH840" class="available">80m Hurdles(U15B)</a></li>
+<li><a data-eventNum="5" data-description = "100m Hurdles (84.0)" id="100MH840" class="available">100m Hurdles(U20/SW)</a></li>
+<li><a data-eventNum="6" data-description = "100m Hurdles (91.4)" id="100MH910" class="available">100m Hurdles(U17M)</a></li>
+<li><a data-eventNum="7" data-description = "110m Hurdles (99.0)" id="110MH990" class="available">110m Hurdles(U20M)</a></li>
+<li><a data-eventNum="8" data-description = "110m Hurdles (106.7)" id="110MH1067" class="available">110m Hurdles(SM)</a></li>
 <li><a data-eventNum="9" data-description = "300 Metres" id="300M" class="available">300m</a></li>
 <li><a data-eventNum="10" data-description = "400 Metres" id="400M" class="available">400m</a></li>
-<li><a data-eventNum="11" data-description = "100 Metres" id="100M" class="available">100m</a></li>
-<li><a data-eventNum="12" data-description = "200 Metres" id="200M" class="available">200m</a></li>
-<li><a data-eventNum="13" data-description = "60 Metres" id="60M" class="available">60m</a></li>
-<li><a data-eventNum="14" data-description = "300m Hurdles (76.2)" id="300MH762" class="available">300m Hurdles(76.2)</a></li>
-<li><a data-eventNum="15" data-description = "400m Hurdles (76.2)" id="400MH762" class="available">400m Hurdles(76.2)</a></li>
-<li><a data-eventNum="16" data-description = "400m Hurdles (84.0)" id="400MH840" class="available">400m Hurdles(84.0)</a></li>
-<li><a data-eventNum="17" data-description = "400m Hurdles (91.4)" id="400MH(910)" class="available">400m Hurdles(91.0)</a></li>
+<li><a data-eventNum="11" data-description = "75 Metres" id="75M" class="available">75m (U13's)</a></li>
+<li><a data-eventNum="12" data-description = "100 Metres" id="100M" class="available">100m</a></li>
+<li><a data-eventNum="13" data-description = "150 Metres" id="150M" class="available">150m (U13's)</a></li>
+<li><a data-eventNum="14" data-description = "200 Metres" id="200M" class="available">200m</a></li>
+<li><a data-eventNum="15" data-description = "300m Hurdles (76.2)" id="300MH762" class="available">300m Hurdles(U17W)</a></li>
+<li><a data-eventNum="16" data-description = "400m Hurdles (76.2)" id="400MH762" class="available">400m Hurdles(U20W/SW)</a></li>
+<li><a data-eventNum="17" data-description = "400m Hurdles (84.0)" id="400MH840" class="available">400m Hurdles(U17M)</a></li>
+<li><a data-eventNum="18" data-description = "400m Hurdles (91.4)" id="400MH(910)" class="available">400m Hurdles(U20/SM)</a></li>
 </ul>
 
 </article>
@@ -170,7 +173,7 @@
 //Main Sprints & Hurdles entry script
 
 //Initialise some variables
-competitionDate = new Date("2022-04-03");
+competitionDate = new Date("2023-04-16");
 var year = competitionDate.getFullYear();
 var month = competitionDate.getMonth();
 var day = competitionDate.getDate();
@@ -181,112 +184,55 @@ var eventsEntered = [];
 var eventsDesc = [];
 var performances = [];
 var i;
+category = 0;
 
 // put an event listener on the events list items
-var eventList = document.getElementById("eventList");
-var events = eventList.querySelectorAll("li a");
-for (var i=0; i<events.length; i++) {
+eventList = document.getElementById("eventList");
+events = eventList.querySelectorAll("li a");
+for (i=0; i<events.length; i++) {
   events[i].addEventListener("click", eventPick);
 }
-
-//get a reference to the submit button and add event listener 
-var myBtn = document.getElementById('contButton');
-myBtn.addEventListener('click', EntryDetail);
 
 //get a reference to the back button and add event listener 
 var backBtn = document.getElementById('backButton');
 backBtn.addEventListener('click', InfoPage);
 
-//Process details from the Entry page  
-function EntryDetail() {
-  //toggle elements of the Event list only if the event is available 
-
-    //make sure valid number of events are selected
+//
+//Done button clicked
+//  
+function EntryDetail() { 
+    //
+    //when a valid number of events are selected prepare for
+    //and display exit page
+    //
     if (totEvents <= 3 && totEvents > 0) {
-
-      forename = document.getElementById("forename").value;
-      surname = document.getElementById("surname").value;
-      dobString = document.getElementById("dob").value;
-      gender = document.getElementById("gender").value;
-      email = document.getElementById("email").value;
-      var telephone = document.getElementById("telephone").value;
-      var ngbnum = document.getElementById("ngbnum").value;
-      var IPCcat = document.getElementById("IPCcat").value;
-      var e = document.getElementById("club");
-      clubCode = e.options[e.selectedIndex].value;
-      clubDesc = e.options[e.selectedIndex].text;
-
-      // Calling validation function
-      if (validation()) {
-        forename = ucase(forename);
-        surname = ucase(surname);
-        gender = ucase(gender);
-
-        // Set the date variables
-        var augustDate = new Date();
-        var endOfYearDate = new Date();
-        var birthDate  = new Date(dob);
-
-        // Set the year of birth and the competition year
-        var birthYear= birthDate.getFullYear();
-        var compYear = competitionDate.getFullYear();
-
-        //Modify date variables to be relevant to the competition year
-        augustDate.setFullYear(compYear, 07, 31); 
-        endOfYearDate.setFullYear(compYear, 11, 31); 
-
-        //Create the birthday date in the competition year
-        var birthday = birthDate;
-        birthday.setFullYear(compYear); 
-
-        //Calculate the athletes age on the day of competition
-        if (birthday > competitionDate) {var compDayAge  = compYear - birthYear- 1;}
-        else {var compDayAge  = compYear - birthYear;}
-
-        //Calculate the athletes age on the age category  qualification date
-        var compYear = augustDate.getFullYear();
-        if (birthday > augustDate) {var augustAge  = compYear - birthYear- 1;}
-        else {var augustAge  = compYear - birthYear;}
- 
-        //Calculate the athletes age at the end of the year of competition 
-        var compYear = endOfYearDate.getFullYear();
-        var endOfYearAge  = compYear - birthYear;
-
-        //Determine the athletes competition category 
-        if (compDayAge > 34) {var category  = Math.floor(compDayAge/5) * 5;}
-        else if (augustAge == 15 || augustAge == 16) {var category = 17;} 
-        else if (augustAge == 13 || augustAge == 14) {var category = 15;}
-        else if (augustAge == 11 || augustAge == 12) {var category = 13;}
-        else if (augustAge <= 10) {var category  = 11;}
-        else if (endOfYearAge == 17 || endOfYearAge == 18 || endOfYearAge == 19) {var category  = 20;}
-        else if (endOfYearAge == 20 || endOfYearAge == 21 || endOfYearAge == 22) {var category   = 23;}
-        else { var category   = 34;}  
-
+      //
+        //
         //Fill unused event spaces so that the output .csv string is a consistent format 
         for (i = totEvents + 1; i <= 3; i++) {
           eventsNum[i - 1] = "*";
           performances[i - 1] = "*";
           eventsDesc[i - 1] = "*";
         }  
-
+        //
         //Calculate entry fee and set the display element Id value
         if (totEvents == 1) {var entryFee = "£5";}
         else if (totEvents == 2) {var entryFee = "£8";}
         else if (totEvents == 3) {var entryFee = "£10";}
         else {var entryFee = "£5";}
         document.getElementById("myFee").innerHTML = "Your entry fee is " + entryFee;
-
+        //
         //Create the .csv string for the Formspree form 
         var detailString = forename + ',' + surname + ',' + gender + category   + ',' 
         + dobString + ',' + clubDesc + ' (' + clubCode + ')'
         + ',' + email + ',' + telephone + ',' + ngbnum + ',' + IPCcat 
         + ',' + eventsNum.toString() + ',' + eventsDesc.toString() + ',' + performances.toString();
-
+        //
         //Reset form values and other variables
         document.getElementById("Details").reset();
         clubCode = " ";
         clubDesc = " ";
-
+        //
         for (i = 0; i < totEvents; i++) {
           var eventId = eventsEntered[0];  
           var eventIdValue = document.getElementById(eventId);
@@ -297,15 +243,12 @@ function EntryDetail() {
           eventsDesc.splice(0, 1);
         }
         totEvents = 0; 
-
+        //
         //Populate the Exit page form
         var contactform = document.getElementById('contactform');
         document.getElementById("myEntry").defaultValue = detailString;
         document.getElementById("entry-page").style.display = "none";
         document.getElementById("exit-page").style.display = "block";
-
-      }
- 
     } else {
       alert("Please select at least one event.");
     } 
@@ -314,18 +257,34 @@ function EntryDetail() {
 function InfoPage() {
    window.location.assign("SandHInfoPage.html")
 }
-
-//event picker function, toggles events in the list between available (green) and selected 
-// (red) ensures no more than 3 events can be picked
+/////////////////////////////
+//event picker pre function//
+/////////////////////////////
 function eventPick() {
+  eventNum = this.attributes["data-eventNum"].value; 
+  eventDesc = this.attributes["data-description"].value; 
+  eventId = this.attributes.id.value;  
+  eventIdValue = document.getElementById(eventId);
+  //
+  // if category has been determined then athlete details have
+  // been entered and checked otherwise do the check.
+  //
+  if (category > 0) {
+    eventPicker();
+  } else {
+    if (firstDetails()) {
+      eventPicker();
+      //get a reference to the Done button and add event listener 
+      myBtn = document.getElementById('contButton');
+      myBtn.addEventListener('click', EntryDetail);
+    } 
+  }
+}
 
-  var eventNum = this.attributes["data-eventNum"].value; 
-  var eventDesc = this.attributes["data-description"].value; 
-  var eventId = this.attributes.id.value;  
-  var eventIdValue = document.getElementById(eventId);
+//event picker function
+function eventPicker() {
 
 if (totEvents < 3) {
-
   //toggle elements of the Event list only if the event is available 
   if (eventIdValue.className === "unavailable") {
   } else {  
@@ -394,28 +353,62 @@ document.getElementById("feeSoFar").innerHTML = "Entry fee " + entryFee;
 function validation() {
 
   if (validateDate(dobString)) {
-   
-    // latest DOB is 10 years prior to competition date
-  
+     
+     if (ngbnum === '' || (ngbnum < 1000000 && ngbnum != 0) ) {
+        alert("Please enter a valid NGB number");
+        return false; }
+     
+
+    // email pattern 
     var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 
+    // ensure no required fields are left empty
     if (forename === '' || surname === '' || email === '' || dob === '' || gender === '') {
       alert("Please enter required data ...(yellow boxes)");
       return false;
+
+      // validate email against pattern
     } else if (!(email).match(emailReg)) {
         alert("Invalid Email...!!!!!!");
         return false;
+
+        // Validate Gender value
       } else if (gender != 'M' && gender != 'F' && gender != 'm' && gender != 'f') {
           alert("Invalid value for Gender...!!!!!!");
-          return false;
+          return false;   
+
+          // latest DOB is 10 years prior to competition date 
           } else if (dob > latestDoB) {
               alert("Athlete is under 10 on day of competition...!!!!!!");
               return false;
-        } else {
+          } else {
+
+          // Prompt for a clubname if NLST (not listed) selected
           if (clubCode === "NLST") {
-            clubDesc = prompt("Enter a club name ");
-            clubCode = "****";
+             clubDesc = prompt("Enter a club name ");
+             clubCode = "****";
           }
+          //
+          //all athlete details entered ok so disable the input fields 
+          //
+          let get = document.getElementById('forename');
+          get.setAttribute('disabled', '');
+          get = document.getElementById('surname');
+          get.setAttribute('disabled', '');
+          get = document.getElementById('dob');
+          get.setAttribute('disabled', '');
+          get = document.getElementById('gender');
+          get.setAttribute('disabled', '');
+          get = document.getElementById('email');
+          get.setAttribute('disabled', '');
+          get = document.getElementById('telephone');
+          get.setAttribute('disabled', '');
+          get = document.getElementById('ngbnum');
+          get.setAttribute('disabled', '');
+          get = document.getElementById('IPCcat');
+          get.setAttribute('disabled', '');
+          get = document.getElementById('club');
+          get.setAttribute('disabled', '');
           return true;
         }
 
@@ -462,7 +455,7 @@ function validateDate(inputText)
 
     if (mm==1 || mm>2) {  
       if (dd>ListofDays[mm-1]) {  
-        alert('Invalid date format!');  
+        alert('Invalid date format, Enter athlete details before event selections.');  
         return false;  
       }  
     } 
@@ -473,32 +466,103 @@ function validateDate(inputText)
         lyear = true;  
       }  
       if ((lyear==false) && (dd>=29)) {  
-        alert('Invalid date format!');  
+        alert('Invalid date format, Enter athlete details before event selections.');  
         return false;  
       }  
       if ((lyear==true) && (dd>29)) {  
-        alert('Invalid date format!');  
+        alert('Invalid date format, Enter athlete details before event selections.');  
         return false;  
       }  
     }  
     return true;
   }  
   else {  
-    alert("Invalid date format!");  
+    alert('Invalid date format, Enter athlete details before event selections.');  
     document.getElementById("dob").focus();  
     return false;  
   }  
 }  
-
-function EntryPage() {
-        document.getElementById("entry-page").style.display = "block";
-        document.getElementById("exit-page").style.display = "none";
+//
+// first athlete details entry Function
+function firstDetails() {
+//
+//make sure valid number of events are selected
+//
+  forename = document.getElementById("forename").value;
+  surname = document.getElementById("surname").value;
+  dobString = document.getElementById("dob").value;
+  gender = document.getElementById("gender").value;
+  email = document.getElementById("email").value;
+  telephone = document.getElementById("telephone").value;
+  ngbnum = document.getElementById("ngbnum").value;
+  IPCcat = document.getElementById("IPCcat").value;
+  var e = document.getElementById("club");
+  clubCode = e.options[e.selectedIndex].value;
+  clubDesc = e.options[e.selectedIndex].text;
+  // Calling validation function
+  if (validation()) {
+    forename = ucase(forename);
+    surname = ucase(surname);
+    gender = ucase(gender);
+    // Set the date variables
+    var augustDate = new Date();
+    var endOfYearDate = new Date();
+    var birthDate  = new Date(dob);
+    // Set the year of birth and the competition year
+    var birthYear= birthDate.getFullYear();
+    var compYear = competitionDate.getFullYear();
+    //Modify date variables to be relevant to the competition year
+    augustDate.setFullYear(compYear, 07, 31); 
+    endOfYearDate.setFullYear(compYear, 11, 31); 
+    //Create the birthday date in the competition year
+    var birthday = birthDate;
+    birthday.setFullYear(compYear); 
+    //Calculate the athletes age on the day of competition
+    if (birthday > competitionDate) {var compDayAge  = compYear - birthYear- 1;}
+    else {var compDayAge  = compYear - birthYear;}
+    //Calculate the athletes age on the age category qualification date
+    var compYear = augustDate.getFullYear();
+    if (birthday > augustDate) {var augustAge  = compYear - birthYear- 1;}
+    else {var augustAge  = compYear - birthYear;}
+    //Calculate the athletes age at the end of the year of competition 
+    var compYear = endOfYearDate.getFullYear();
+    var endOfYearAge  = compYear - birthYear;
+    //Determine the athletes competition category 
+    if (compDayAge > 34) {category  = Math.floor(compDayAge/5) * 5;}
+    else if (augustAge == 15 || augustAge == 16) {category = 17;} 
+    else if (augustAge == 13 || augustAge == 14) {category = 15;}
+    else if (augustAge == 11 || augustAge == 12) {category = 13;}
+    else if (augustAge <= 10) {category  = 11;}
+    else if (endOfYearAge == 17 || endOfYearAge == 18 || endOfYearAge == 19) {category  = 20;}
+    else if (endOfYearAge == 20 || endOfYearAge == 21 || endOfYearAge == 22) {category  = 23;}
+    else {category = 34;}
+    //
+    // determine the event availability here
+    //
+    eventList = document.getElementById("eventList");
+    events = eventList.querySelectorAll("li a");
+    for (i=0; i<events.length; i++) {
+      // 400M eligibility
+      if (category === 13 && i == 9) {
+        events[i].className = "unavailable";
+        events[i].removeEventListener("click", eventPick);
+      }
+      // 75M eligibility
+      if (category !== 13 && i == 10) {
+        events[i].className = "unavailable";
+        events[i].removeEventListener("click", eventPick);
+      }
+      // 150M eligibility
+      if (category !== 13 && i == 12) {
+        events[i].className = "unavailable";
+        events[i].removeEventListener("click", eventPick);
+      }
+    }
+    return true;
+  } else {
+    return false;
+  }
 }
-function ExitPage() {
-        document.getElementById("entry-page").style.display = "none";
-        document.getElementById("exit-page").style.display = "block";
-}
-
 
 function StartPage() {
     window.location.assign("SandHInfoPage.html")

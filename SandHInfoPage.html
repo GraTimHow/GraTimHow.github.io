@@ -21,19 +21,27 @@ article {
     text-align: left;
 }
 
+aside {
+    margin-left: 400px;
+    padding: 1em;
+    overflow: hidden;
+}
 </style>
 
 <script>
 
 function EnterPage() {
-  // Entries are closed 
-  var closeDate = new Date("2022-04-09");
+  // Entries are closed or Opening soon message
+  var closeDate = new Date("2023-04-09");
+  var openDate = new Date("2023-02-01");
   var today = new Date();
   if (today > closeDate ) {
      document.getElementById("message").innerHTML = "<mark>* * * Entries are now closed * * *</mark>";
-  }
-  else {
+  }   else if (today > openDate ) {
      window.location.assign("SandHEntryPage.html")
+     //document.getElementById("message").innerHTML = "<mark> </mark>"
+  }  else {
+     document.getElementById("message").innerHTML = "<mark>* * * Entries will open in February * * *</mark>";
   }
 }
 
@@ -48,15 +56,48 @@ function EnterPage() {
 <div class="container">
 
 <article>
-<p> ENTRIES will be open in February</p>
-<p></p>
+<p>Your entry will be processed and confirmed by email on receipt of your payment.</p>
+<p>Entry closing date Sunday April 9th 2023 or sooner if the entry limit of 200 competitors is reached.</p>
+<p>Athletes must be age 10 or over on the day to be eligible to enter.</p>
+<p>Fees - 1 event £5, 2 events £8, 3 events £10.</p>
+<p>Payment by Bank transfer with Athlete name as a transaction reference to :- </p>
+<p>A/C Number 00112070 Sort Code 60-10-15 A/C Name G Howell</p> 
 <p> </p>
+<p>Collect numbers on the day. There are no Entries or Payments on the day.</p>
+<p>Once entries have closed, Heats seeded and Final timetable produced, entries will not be changed. Heats are run slowest to fastest.</p>
 <p> </p>
+<p>By entering you accept the following UKa Statement - 'All entrants shall be deemed to have made themselves familiar with, and agreed to be bound
+by the UKA Anti-Doping Rules and to submit to the authority of UK Anti-Doping in the application and enforcement
+of the Anti-Doping Rules. The UKA Anti-Doping Rules apply to entrants participating in the sport of Athletics, for
+12 months from the date of entry, whether or not the entrant is a citizen of, or resident in, the UK.'</p>
 <p> </p>
-<p> </p>
-
+<p id="message">Click Enter Button to make an entry</p>
+<button type="button" onclick="EnterPage()">Enter</button>
 </article>
 
+  
+  
+
+
+<aside>
+<h4>Provisional Timetable :-</h4>
+
+<ul id="eventList" >
+<li><a>13:00 - 70m Hurdles</a></li>
+<li><a>13:05 - 75m Hurdles</a></li>
+<li><a>13:15 - 80m Hurdles</a></li>
+<li><a>13:25 - 100m Hurdles</a></li>
+<li><a>13:35 - 110m Hurdles</a></li>
+<li><a>13:45 - 300m</a></li>
+<li><a>14:00 - 400m</a></li>
+<li><a>14:15 - 75m (U13's)</a></li>
+<li><a>14:30 - 100m</a></li>
+<li><a>15:45 - 150m (U13's)</a></li>
+<li><a>16:00 - 200m</a></li>
+<li><a>17:30 - 300m Hurdles</a></li>
+<li><a>17:45 - 400m Hurdles</a></li>
+</ul>
+</aside>
 </div>
 </body>
 
