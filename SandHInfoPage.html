@@ -38,7 +38,6 @@ function EnterPage() {
   if (today > closeDate ) {
      document.getElementById("message").innerHTML = "<mark>* * * Entries are now closed * * * If you think you have entered and paid but not received a confirmation then email gratimhow@aol.com</mark>";
   }   else if (today > openDate ) {
-     //window.location.assign("SandHEntryPage.html")
      document.getElementById("message").innerHTML = "<mark> </mark>"
   }  else {
      document.getElementById("message").innerHTML = "<mark>* * * Entries will open in February * * *</mark>";
