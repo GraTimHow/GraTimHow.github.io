@@ -32,13 +32,13 @@ aside {
 
 function EnterPage() {
   // Entries are closed or Opening soon message
-  var closeDate = new Date("2023-03-23");
-  var openDate = new Date("2023-02-01");
+  var closeDate = new Date("2024-04-04");
+  var openDate = new Date("2024-02-01");
   var today = new Date();
   if (today > closeDate ) {
      document.getElementById("message").innerHTML = "<mark>* * * Entries are now closed * * * If you think you have entered and paid but not received a confirmation then email gratimhow@aol.com</mark>";
   }   else if (today > openDate ) {
-     document.getElementById("message").innerHTML = "<mark> </mark>"
+     window.location.assign("SandHEntryPage.html")
   }  else {
      document.getElementById("message").innerHTML = "<mark>* * * Entries will open in February * * *</mark>";
   }
@@ -50,13 +50,13 @@ function EnterPage() {
 
 <body> 
 
-<h1>Sprints & Hurdles C23 - Sunday April 16th 2023</h1>
+<h1>Sprints & Hurdles C24 - Sunday April 14th 2024</h1>
 
 <div class="container">
 
 <article>
 <p>Your entry will be processed and confirmed by email on receipt of your payment.</p>
-<p>Entry closing date Sunday April 9th 2023 or sooner if the entry limit of 200 competitors is reached.</p>
+<p>Entry closing date April 4th 2024 or sooner if the entry limit of 200 competitors is reached.</p>
 <p>Athletes must be age 10 or over on the day to be eligible to enter.</p>
 <p>Fees - 1 event £5, 2 events £8, 3 events £10.</p>
 <p>Payment by Bank transfer with Athlete name as a transaction reference to :- </p>
@@ -90,11 +90,13 @@ of the Anti-Doping Rules. The UKA Anti-Doping Rules apply to entrants participat
 <li><a>13:45 - 300m</a></li>
 <li><a>14:00 - 400m</a></li>
 <li><a>14:15 - 75m (U13's)</a></li>
-<li><a>14:30 - 100m</a></li>
-<li><a>15:45 - 150m (U13's)</a></li>
-<li><a>16:00 - 200m</a></li>
-<li><a>17:30 - 300m Hurdles</a></li>
-<li><a>17:45 - 400m Hurdles</a></li>
+<li><a>14:30 - 100m Para</a></li>
+<li><a>14:35 - 100m</a></li>
+<li><a>15:50 - 150m (U13's)</a></li>
+<li><a>16:05 - 200m Para</a></li>
+<li><a>16:10 - 200m</a></li>
+<li><a>17:40 - 300m Hurdles</a></li>
+<li><a>17:50 - 400m Hurdles</a></li>
 </ul>
 </aside>
 </div>
