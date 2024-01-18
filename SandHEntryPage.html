@@ -1,0 +1,602 @@
+<!doctype html>
+<html>
+<head> 
+
+<link href="SandHStyleSheet.css" rel="stylesheet"/>
+
+<title>Sprints & Hurdles</title>
+
+</head>
+
+<body>
+
+<div id="Common"> 
+   <h1>Sprints & Hurdles C24</h1>
+   <h2>April 14th 2024</h2>
+</div>
+
+<div id="entry-page">
+
+<form id="Details" method="POST">
+
+<nav>
+<p>
+<pre>
+ Forename     : <input type="text" id = "forename" required><br> 
+ Surname      : <input type="text" id = "surname" required><br>
+ Date of Birth: <input type="text" id = "dob" maxlength = "10" size = "8" required> (dd/mm/yyyy)<br> 
+ Gender M/F   : <input type="text" id = "gender" maxlength = "1" size = "1" required><br>
+ E-mail       : <input type="email" id="email" required><br>
+ Telephone    : <input type="tel" id="telephone" maxlength = "12"><br>
+<div class="NGBtip"> NGB Registration number: <span class="NGBtiptext">National Governing Body (England/Welsh Athletics)</span></div> <input type="text" id = "ngbnum" maxlength = "7" size = "6" required><br>
+<div class="IPCtip"> IPC Classification : <span class="IPCtiptext">International Paralympic Committee</span></div> <input type="text" id = "IPCcat" maxlength = "3" size = "4"> <br>
+ Club: <select id="club">
+  <option value=" ">Unattached</option>
+  <option value="NLST">Other</option>
+  <option value="AF&D">Aldershot Farnham & District</option>
+  <option value="BANH">Banbury Harriers</option>
+  <option value="B&VH">Barry & Vale Harriers</option>
+  <option value="BUNI">Bath University</option>
+  <option value="BRCH">Birchfield Harriers</option>
+  <option value="GWNT">Blaenau Gwent</option>
+  <option value="BOUR">Bournemouth AC</option>
+  <option value="BRCK">Bracknell AC</option>
+  <option value="BREC">Brecon AC</option>
+  <option value="BRDG">Bridgend AC</option>
+  <option value="B&H">Brighton & Hove AC</option>
+  <option value="B&W">Bristol & West AC</option>
+  <option value="BUNI">Bristol University</option>
+  <option value="BROM">Bromsgrove & Redditch AC</option>
+  <option value="C&S">Cannock & Staffs</option>
+  <option value="CARD">Cardiff AAC</option>
+  <option value="CARC">Cardiff Archers</option>
+  <option value="CMET">Cardiff Met Uni</option>
+  <option value="CHEL">Cheltenham Harriers</option>
+  <option value="COP">City of Plymouth</option>
+  <option value="COS">City of Salisbury</option>
+  <option value="COLC">Colchester & Tendring AC</option>
+  <option value="CRNW">Cornwall AC</option>
+  <option value="COVG">Coventry Godiva Harriers</option>
+  <option value="CWMB">Cwmbran Harriers</option>
+  <option value="DART">Dartford Harriers</option>
+  <option value="DVZS">Devizes Moonrakers</option>
+  <option value="DSWP">Disability Sport Wales Para Academy</option>
+  <option value="DWNS">Downend School</option>
+  <option value="DASH">Dudley & Stourbridge Harriers</option>
+  <option value="ECRN">East Cornwall Harriers</option>
+  <option value="EXTR">Exeter Harriers</option>
+  <option value="FOD">Forest of Dean AC</option>
+  <option value="GLOS">Gloucester AC</option>
+  <option value="GRM">Grimsby Harriers AC</option>
+  <option value="GSCH">Gloucestershire Schools</option>
+  <option value="GNSY">Guernsey AC</option>
+  <option value="HAL">Halesowen AC</option>
+  <option value="HRFD">Hereford AC</option>
+  <option value="IOW">Isle of Wight AC</option>
+  <option value="LAVA">Lavington Athletics</option>
+  <option value="LLAN">Llanelli Athletics Club</option>
+  <option value="LLIS">Lliswerry Runners</option>
+  <option value="MARL">Marlborough AC</option>
+  <option value="MEND">Mendip AC</option>
+  <option value="NAIL">Nailsea RC</option>
+  <option value="NTHH">Neath Harriers</option>
+  <option value="NEWP">Newport Harriers</option>
+  <option value="NDAC">North Devon AC</option>
+  <option value="NSAC">North Somerset AC</option>
+  <option value="NOTS">Nottingham AC</option>
+  <option value="NTU">Nottingham Trent Uni</option>
+  <option value="OXFC">Oxford City</option>
+  <option value="PBBR">Parc Bryn Bach Running Club</option>
+  <option value="PMBH">Pembrokeshire Harriers</option>
+  <option value="PLAC">Poole AC</option>
+  <option value="POOR">Poole Runners</option>
+  <option value="RADL">Radley AC</option>
+  <option value="READ">Reading AC</option>
+  <option value="RHYV">Rhymney Valley</option>
+  <option value="SGSC">SGS College</option>
+  <option value="SGAC">South Glos AC</option>
+  <option value="SWV">South West Vets AC</option>
+  <option value="SMR">Somer AC</option>
+  <option value="SOU">Southampton AC</option>
+  <option value="SPEN">Spenborough & District AC</option>
+  <option value="STRD">Stroud & District AC</option>
+  <option value="SWAN">Swansea Harriers</option>
+  <option value="SWIN">Swindon Harriers</option>
+  <option value="TNTN">Taunton AC</option>
+  <option value="TMB">Team Bath</option>
+  <option value="TKT">Team Kennet Triathlon & AC</option>
+  <option value="TVH">Thames Valley Harriers</option>
+  <option value="UBRM">University of Birmingham</option>
+  <option value="UGLO">University of Gloucestershire</option>
+  <option value="UWE">University of West England</option>
+  <option value="WNCH">Winchester & District AC</option>
+  <option value="WSEH">Windsor Slough Eaton Hounslow</option>
+  <option value="WORC">Worcester AC</option>
+  <option value="WREX">Wrexham AC</option>
+  <option value="YAT">Yate & District AC</option>
+  <option value="YOLY">Yeovil Olympiads</option>
+  </select>
+<br/>
+<p class="displayPicked" id="event1Entered"></p>
+<p class="displayPicked" id="event2Entered"></p>
+<p class="displayPicked" id="event3Entered"></p>
+<h3 id="feeSoFar"></h3>
+</pre>
+<input type="button" id="contButton" value="Continue"/>
+<input type="button" id="backButton" value="Go back"/>
+
+</nav>
+
+<article>
+<h4>Select / de-select up to 3 events:</h4>
+
+<ul id="eventList" >
+<li><a data-eventNum="1" data-description = "70m Hurdles (68.5)" id="70MH685" class="available">70m Hurdles(U13G)</a></li>
+<li><a data-eventNum="2" data-description = "75m Hurdles (76.2)" id="75MH762" class="available">75mHurdles(U13B/G)</a></li>
+<li><a data-eventNum="3" data-description = "80m Hurdles (76.2)" id="80MH762" class="available">80m Hurdles(U17W)</a></li>
+<li><a data-eventNum="4" data-description = "80m Hurdles (84.0)" id="80MH840" class="available">80m Hurdles(U15B)</a></li>
+<li><a data-eventNum="5" data-description = "100m Hurdles (84.0)" id="100MH840" class="available">100m Hurdles(U20/SW)</a></li>
+<li><a data-eventNum="6" data-description = "100m Hurdles (91.4)" id="100MH910" class="available">100m Hurdles(U17M)</a></li>
+<li><a data-eventNum="7" data-description = "110m Hurdles (99.0)" id="110MH990" class="available">110m Hurdles(U20M)</a></li>
+<li><a data-eventNum="8" data-description = "110m Hurdles (106.7)" id="110MH1067" class="available">110m Hurdles(SM)</a></li>
+<li><a data-eventNum="9" data-description = "300 Metres" id="300M" class="available">300m</a></li>
+<li><a data-eventNum="10" data-description = "400 Metres" id="400M" class="available">400m</a></li>
+<li><a data-eventNum="11" data-description = "75 Metres" id="75M" class="available">75m (U13's)</a></li>
+<li><a data-eventNum="12" data-description = "100 Metres Para" id="100MP" class="available">100m Para</a></li>
+<li><a data-eventNum="13" data-description = "100 Metres" id="100M" class="available">100m</a></li>
+<li><a data-eventNum="14" data-description = "150 Metres" id="150M" class="available">150m (U13's)</a></li>
+<li><a data-eventNum="15" data-description = "200 Metres Para" id="200MP" class="available">200m Para</a></li>
+<li><a data-eventNum="16" data-description = "200 Metres" id="200M" class="available">200m</a></li>
+<li><a data-eventNum="17" data-description = "300m Hurdles (76.2)" id="300MH762" class="available">300m Hurdles(U17W)</a></li>
+<li><a data-eventNum="18" data-description = "400m Hurdles (76.2)" id="400MH762" class="available">400m Hurdles(U20W/SW)</a></li>
+<li><a data-eventNum="19" data-description = "400m Hurdles (84.0)" id="400MH840" class="available">400m Hurdles(U17M)</a></li>
+<li><a data-eventNum="20" data-description = "400m Hurdles (91.4)" id="400MH(910)" class="available">400m Hurdles(U20/SM)</a></li>
+</ul>
+
+</article>
+
+</form>
+
+</div>
+
+<div id="exit-page" style="display:none;" > 
+<p>Click Send to send entry or Abort to go back.</p>
+
+<form id="contactform" action="https://formspree.io/f/mgedvdqz" method="POST">
+
+  <input type="submit" value="Send">   <button type="button" onclick="StartPage()">Abort</button>
+  <input type="text" id="myEntry" name="entry" placeholder="Entry details" size = "90" readonly style="display:none">
+  <input type="hidden" name="_next" value="SandHInfoPage.html" />
+  <input type="hidden" name="_subject" value="Sprints and Hurdles Entry" />
+  <input type="text" name="_gotcha" style="display:none" />
+
+</form>
+
+<p>Entries will be confirmed by email on receipt of your payment.</p>
+<h2 id="myFee">Your entry fee is £5</h2>
+<p>Payment by Bank transfer to a/c number 00112070 Sort Code 60-10-15 a/c name G Howell - with Athlete name as a transaction reference.</p>
+
+</div>
+
+<script >
+
+//Main Sprints & Hurdles entry script
+
+//Initialise some variables
+competitionDate = new Date("2024-04-14");
+var year = competitionDate.getFullYear();
+var month = competitionDate.getMonth();
+var day = competitionDate.getDate();
+var latestDoB = new Date(year - 10, month, day)
+var totEvents = 0;
+var eventsNum = [];
+var eventsEntered = [];
+var eventsDesc = [];
+var performances = [];
+var i;
+category = 0;
+
+// Send back to Info page if entry window is not open, check here stops bypass of the Info page checks
+  var closeDate = new Date("2024-04-04");
+  var openDate = new Date("2024-02-05");
+  var today = new Date();
+  if (today > closeDate || today < openDate ) {
+     window.location.assign("SandHInfoPage.html")
+  }  
+
+// put an event listener on the events list items
+eventList = document.getElementById("eventList");
+events = eventList.querySelectorAll("li a");
+for (i=0; i<events.length; i++) {
+  events[i].addEventListener("click", eventPick);
+}
+
+//get a reference to the back button and add event listener 
+var backBtn = document.getElementById('backButton');
+backBtn.addEventListener('click', InfoPage);
+
+//
+//Done button clicked
+//  
+function EntryDetail() { 
+    //
+    //when a valid number of events are selected prepare for
+    //and display exit page
+    //
+    if (totEvents <= 3 && totEvents > 0) {
+      //
+        //
+        //Fill unused event spaces so that the output .csv string is a consistent format 
+        for (i = totEvents + 1; i <= 3; i++) {
+          eventsNum[i - 1] = "*";
+          performances[i - 1] = "*";
+          eventsDesc[i - 1] = "*";
+        }  
+        //
+        //Calculate entry fee and set the display element Id value
+        if (totEvents == 1) {var entryFee = "£5";}
+        else if (totEvents == 2) {var entryFee = "£8";}
+        else if (totEvents == 3) {var entryFee = "£10";}
+        else {var entryFee = "£5";}
+        document.getElementById("myFee").innerHTML = "Your entry fee is " + entryFee;
+        //
+        //Create the .csv string for the Formspree form 
+        var detailString = forename + ',' + surname + ',' + gender + category   + ',' 
+        + dobString + ',' + clubDesc + 
+        + ',' + email + ',' + telephone + ',' + ngbnum + ',' + IPCcat 
+        + ',' + eventsNum.toString() + ',' + eventsDesc.toString() + ',' + performances.toString();
+        //
+        //Reset form values and other variables
+        document.getElementById("Details").reset();
+        clubCode = " ";
+        clubDesc = " ";
+        //
+        for (i = 0; i < totEvents; i++) {
+          var eventId = eventsEntered[0];  
+          var eventIdValue = document.getElementById(eventId);
+          eventIdValue.className = "available";
+          eventsEntered.splice(0, 1);
+          eventsNum.splice(0, 1);
+          performances.splice(0, 1);
+          eventsDesc.splice(0, 1);
+        }
+        totEvents = 0; 
+        //
+        //Populate the Exit page form
+        var contactform = document.getElementById('contactform');
+        document.getElementById("myEntry").defaultValue = detailString;
+        document.getElementById("entry-page").style.display = "none";
+        document.getElementById("exit-page").style.display = "block";
+    } else {
+      alert("Please select at least one event.");
+    } 
+}
+
+function InfoPage() {
+   window.location.assign("SandHInfoPage.html")
+}
+/////////////////////////////
+//event picker pre function//
+/////////////////////////////
+function eventPick() {
+  eventNum = this.attributes["data-eventNum"].value; 
+  eventDesc = this.attributes["data-description"].value; 
+  eventId = this.attributes.id.value;  
+  eventIdValue = document.getElementById(eventId);
+  //
+  // if category has been determined then athlete details have
+  // been entered and checked otherwise do the check.
+  //
+  if (category > 0) {
+    eventPicker();
+  } else {
+    if (firstDetails()) {
+      eventPicker();
+      //get a reference to the Done button and add event listener 
+      myBtn = document.getElementById('contButton');
+      myBtn.addEventListener('click', EntryDetail);
+    } 
+  }
+}
+
+//event picker function
+function eventPicker() {
+
+if (totEvents < 3) {
+  //toggle elements of the Event list only if the event is available 
+  if (eventIdValue.className === "unavailable") {
+  } else {  
+    if (eventIdValue.className === "available") {
+       eventIdValue.className = "selected";
+       totEvents++;
+         eventsEntered.push(eventId);
+         eventsNum.push(eventNum);    
+         eventsDesc.push(eventDesc);
+         var seedTime = prompt("Current " + eventDesc + " performance for seeding", 0.0);
+         performances.push(seedTime);
+     } else {
+       eventIdValue.className = "available";
+       totEvents--;
+       //remove the event and associated performance from the arrays
+       var index = eventsEntered .indexOf(eventId); 
+       if (index > -1) {
+         eventsEntered.splice(index, 1);
+         eventsNum.splice(index, 1);
+         eventsDesc.splice(index,1);
+         performances.splice(index, 1);
+       }
+     }
+  }
+
+} else {
+  //already have 3 events selected so maybe we can de-select an event
+  if (eventIdValue.className === "selected") {
+     eventIdValue.className = "available";
+     totEvents--;
+     //remove the event and associated performance from the arrays
+     var index = eventsEntered .indexOf(eventId); 
+     if (index > -1) {
+       eventsEntered.splice(index, 1);
+       eventsNum.splice(index, 1);
+       eventsDesc.splice(index,1);
+       performances.splice(index, 1);
+     } 
+   }
+}
+
+// display the picked events and performances
+document.getElementById("event1Entered").innerHTML = "";
+document.getElementById("event2Entered").innerHTML = "";
+document.getElementById("event3Entered").innerHTML = "";
+
+if (totEvents >= 1) {
+  document.getElementById("event1Entered").innerHTML = eventsDesc[0] + " (" + performances[0] + ")";
+  var entryFee = "£5";
+}
+if (totEvents >= 2) {
+  document.getElementById("event2Entered").innerHTML = eventsDesc[1] + " (" + performances[1] + ")";
+  var entryFee = "£8";
+}
+if (totEvents == 3) {
+  document.getElementById("event3Entered").innerHTML = eventsDesc[2] + " (" + performances[2] + ")";
+  var entryFee = "£10";
+}
+
+//Set the display element Id value
+document.getElementById("feeSoFar").innerHTML = "Entry fee " + entryFee;
+
+}
+
+// Inputs validation Function
+function validation() {
+
+  if (validateDate(dobString)) {
+     
+     if (ngbnum === '' || (ngbnum < 1000000 && ngbnum != 0) ) {
+        alert("Please enter a valid NGB number");
+        return false; }
+     
+
+    // email pattern 
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+    // ensure no required fields are left empty
+    if (forename === '' || surname === '' || email === '' || dob === '' || gender === '') {
+      alert("Please enter required data ...(yellow boxes)");
+      return false;
+
+      // validate email against pattern
+    } else if (!(email).match(emailReg)) {
+        alert("Invalid Email...!!!!!!");
+        return false;
+
+        // Validate Gender value
+      } else if (gender != 'M' && gender != 'F' && gender != 'm' && gender != 'f') {
+          alert("Invalid value for Gender...!!!!!!");
+          return false;   
+
+          // latest DOB is 10 years prior to competition date 
+          } else if (dob > latestDoB) {
+              alert("Athlete is under 10 on day of competition...!!!!!!");
+              return false;
+          } else {
+
+          // Prompt for a clubname if NLST (not listed) selected
+          if (clubCode === "NLST") {
+             clubDesc = prompt("Enter a club name ");
+             clubCode = "****";
+          }
+          //
+          //all athlete details entered ok so disable the input fields 
+          //
+          let get = document.getElementById('forename');
+          get.setAttribute('disabled', '');
+          get = document.getElementById('surname');
+          get.setAttribute('disabled', '');
+          get = document.getElementById('dob');
+          get.setAttribute('disabled', '');
+          get = document.getElementById('gender');
+          get.setAttribute('disabled', '');
+          get = document.getElementById('email');
+          get.setAttribute('disabled', '');
+          get = document.getElementById('telephone');
+          get.setAttribute('disabled', '');
+          get = document.getElementById('ngbnum');
+          get.setAttribute('disabled', '');
+          get = document.getElementById('IPCcat');
+          get.setAttribute('disabled', '');
+          get = document.getElementById('club');
+          get.setAttribute('disabled', '');
+          return true;
+        }
+
+  } else {
+    return false;
+  } 
+}
+
+//Uppercase the first character in the string
+function ucase(inStr) 
+  {
+  return inStr.replace(/^[a-z]/, function(str) {return str.toUpperCase()});
+} 
+
+// Validate a string as a dd/mm/yyyy date format
+function validateDate(inputText)  
+  {  
+  var dateformat = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;  
+  // Match the date format through regular expression  
+  if(inputText.match(dateformat)) {  
+    document.getElementById("dob").focus();  
+
+    //Test which separator is used '/' or '-'  
+    var opera1 = inputText.split('/');  
+    var opera2 = inputText.split('-');  
+    lopera1 = opera1.length;  
+    lopera2 = opera2.length; 
+ 
+    // Extract the string into month, date and year  
+    if (lopera1>1) {  
+      var pdate = inputText.split('/');  
+    }  
+    else if (lopera2>1) {  
+      var pdate = inputText.split('-');  
+    }
+  
+    var dd = parseInt(pdate[0]);  
+    var mm  = parseInt(pdate[1]);  
+    var yy = parseInt(pdate[2]);  
+    dob = new Date(yy,mm-1,dd);
+
+    // Create list of days of a month [assume there is no leap year by default]  
+    var ListofDays = [31,28,31,30,31,30,31,31,30,31,30,31];  
+
+    if (mm==1 || mm>2) {  
+      if (dd>ListofDays[mm-1]) {  
+        alert('Invalid date format, Enter athlete details before event selections.');  
+        return false;  
+      }  
+    } 
+ 
+    if (mm==2) {  
+      var lyear = false;  
+      if ( (!(yy % 4) && yy % 100) || !(yy % 400)) {  
+        lyear = true;  
+      }  
+      if ((lyear==false) && (dd>=29)) {  
+        alert('Invalid date format, Enter athlete details before event selections.');  
+        return false;  
+      }  
+      if ((lyear==true) && (dd>29)) {  
+        alert('Invalid date format, Enter athlete details before event selections.');  
+        return false;  
+      }  
+    }  
+    return true;
+  }  
+  else {  
+    alert('Invalid date format, Enter athlete details before event selections.');  
+    document.getElementById("dob").focus();  
+    return false;  
+  }  
+}  
+//
+// first athlete details entry Function
+function firstDetails() {
+//
+//make sure valid number of events are selected
+//
+  forename = document.getElementById("forename").value;
+  surname = document.getElementById("surname").value;
+  dobString = document.getElementById("dob").value;
+  gender = document.getElementById("gender").value;
+  email = document.getElementById("email").value;
+  telephone = document.getElementById("telephone").value;
+  ngbnum = document.getElementById("ngbnum").value;
+  IPCcat = document.getElementById("IPCcat").value;
+  var e = document.getElementById("club");
+  clubCode = e.options[e.selectedIndex].value;
+  clubDesc = e.options[e.selectedIndex].text;
+  // Calling validation function
+  if (validation()) {
+    forename = ucase(forename);
+    surname = ucase(surname);
+    gender = ucase(gender);
+    // Set the date variables
+    var augustDate = new Date();
+    var endOfYearDate = new Date();
+    var birthDate  = new Date(dob);
+    // Set the year of birth and the competition year
+    var birthYear= birthDate.getFullYear();
+    var compYear = competitionDate.getFullYear();
+    //Modify date variables to be relevant to the competition year
+    augustDate.setFullYear(compYear, 07, 31); 
+    endOfYearDate.setFullYear(compYear, 11, 31); 
+    //Create the birthday date in the competition year
+    var birthday = birthDate;
+    birthday.setFullYear(compYear); 
+    //Calculate the athletes age on the day of competition
+    if (birthday > competitionDate) {var compDayAge  = compYear - birthYear- 1;}
+    else {var compDayAge  = compYear - birthYear;}
+    //Calculate the athletes age on the age category qualification date
+    var compYear = augustDate.getFullYear();
+    if (birthday > augustDate) {var augustAge  = compYear - birthYear- 1;}
+    else {var augustAge  = compYear - birthYear;}
+    //Calculate the athletes age at the end of the year of competition 
+    var compYear = endOfYearDate.getFullYear();
+    var endOfYearAge  = compYear - birthYear;
+    //Determine the athletes competition category 
+    if (compDayAge > 34) {category  = Math.floor(compDayAge/5) * 5;}
+    else if (augustAge == 15 || augustAge == 16) {category = 17;} 
+    else if (augustAge == 13 || augustAge == 14) {category = 15;}
+    else if (augustAge == 11 || augustAge == 12) {category = 13;}
+    else if (augustAge <= 10) {category  = 13;}
+    else if (endOfYearAge == 17 || endOfYearAge == 18 || endOfYearAge == 19) {category  = 20;}
+    else if (endOfYearAge == 20 || endOfYearAge == 21 || endOfYearAge == 22) {category  = 23;}
+    else {category = 34;}
+    //
+    // determine the event availability here, note the i incrementing index is equal to 1 less than the event number
+    //
+    eventList = document.getElementById("eventList");
+    events = eventList.querySelectorAll("li a");
+    for (i=0; i<events.length; i++) {
+      // 400M eligibility
+      if (category === 13 && i == 9) {
+        events[i].className = "unavailable";
+        events[i].removeEventListener("click", eventPick);
+      }
+      // 75M eligibility
+      if (category !== 13 && i == 10) {
+        events[i].className = "unavailable";
+        events[i].removeEventListener("click", eventPick);
+      }
+      // 150M eligibility
+      if (category !== 13 && i == 13) {
+        events[i].className = "unavailable";
+        events[i].removeEventListener("click", eventPick);
+      }
+      // 100M Para eligibility
+      if ((IPCcat === null || IPCcat.trim() === "") && i == 11) {
+        events[i].className = "unavailable";
+        events[i].removeEventListener("click", eventPick);
+      }
+      // 200M Para eligibility
+      if ((IPCcat === null || IPCcat.trim() === "") && i == 14) {
+        events[i].className = "unavailable";
+        events[i].removeEventListener("click", eventPick);
+      }
+    }
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function StartPage() {
+    window.location.assign("SandHInfoPage.html")
+}
+</script>
+
+</body>
+
+</html>
