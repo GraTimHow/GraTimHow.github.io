@@ -32,7 +32,7 @@ aside {
 
 function EnterPage() {
   // Entries are closed or Opening soon message
-  var closeDate = new Date("2024-04-04");
+  var closeDate = new Date("2024-03-17");
   var openDate = new Date("2024-02-05");
   var today = new Date();
   if (today > closeDate ) {
@@ -44,6 +44,10 @@ function EnterPage() {
   }
 }
 
+function EntryListPage() {
+  // 
+window.location.assign("SandHEntriesIndex.html")
+}
 </script>
 
 </head>
@@ -55,7 +59,7 @@ function EnterPage() {
 <div class="container">
 
 <article>
-<p>Your entry will be processed and confirmed by email within 5 days of receipt of your payment. If you think you have entered and paid but not received a confirmation then email gratimhow@aol.com</p>
+<p>Your entry will be processed and confirmed by email within 5 days of receipt of your payment. If you think you have entered and paid but not received a confirmation then email gratimhow@aol.com  <button type="button" onclick="EntryListPage()">Confirmed Entries</button></p>
 <p>Entry closing date April 4th 2024 or sooner if the entry limit of 200 competitors is reached.</p>
 <p>Athletes must be age 10 or over on the day to be eligible to enter.</p>
 <p>Fees - 1 event £5, 2 events £8, 3 events £10.</p>
@@ -64,18 +68,15 @@ function EnterPage() {
 <p> </p>
 <p>Collect numbers on the day. There are no Entries or Payments on the day.</p>
 <p>Once entries have closed, Heats seeded and Final timetable produced, entries will not be changed. Heats are run slowest to fastest.</p>
-<p> </p>
+
 <p>By entering you accept the following UKa Statement - 'All entrants shall be deemed to have made themselves familiar with, and agreed to be bound
 by the UKA Anti-Doping Rules and to submit to the authority of UK Anti-Doping in the application and enforcement
 of the Anti-Doping Rules. The UKA Anti-Doping Rules apply to entrants participating in the sport of Athletics, for
 12 months from the date of entry, whether or not the entrant is a citizen of, or resident in, the UK.'</p>
 <p id="message">Click Enter Button to make an entry 
-<button type="button" onclick="EnterPage()">Enter</button></p>
+<button type="button" onclick="EnterPage()">Enter</button>
+
 </article>
-
-  
-  
-
 
 <aside>
 <h4>Provisional Timetable :-</h4>
