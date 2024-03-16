@@ -2,16 +2,13 @@
 <html>
 <head> 
 </head>
-
 <title>
 Sprints & Hurdles
 </title>
-
 <link href="SandHStyleSheet.css" rel="stylesheet"/>
-
 <h1>Sprints & Hurdles C24 - Sunday April 14th 2024</h1>
 <h2>Level 1 Licence number OUT 24/020</h2>
-
+<input type="button" id="backButton" value="Back to Info Page"/>
 <p>If you think you have entered and paid but not received a confirmation then email gratimhow@aol.com</p>
 <ul>
 <li> <a href="SandH70mHurdles(68.5).html">70m Hurdles (68.5) </a></li>
@@ -34,10 +31,15 @@ Sprints & Hurdles
 <li> <a href="SandH400mHurdles(76.2).html">400m Hurdles (76.2) </a></li>
 <li> <a href="SandH400mHurdles(84.0).html">400m Hurdles (84.0) </a></li>
 <li> <a href="SandH400mHurdles(91.4).html">400m Hurdles (91.4) </a></li>
-
-
 </ul>
-
+<script >
+//get a reference to the back button and add event listener 
+var backBtn = document.getElementById('backButton');
+backBtn.addEventListener('click', InfoPage);
+function InfoPage() {
+    window.location.assign("SandHInfoPage.html")
+}
+</script>
 </body>
 
 </html>

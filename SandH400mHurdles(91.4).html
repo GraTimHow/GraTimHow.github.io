@@ -18,14 +18,25 @@ article {
 }
 </style>
 </head>
+<input type="button" id="backButton" value="Back to Index"/>
 <body> 
 <div class="container">
 <article>
-<h2>400m Hurdles (91.4) - 2 entries - 1 heats. As at 15/3/2024</h2>
+<h2>400m Hurdles (91.4) - 3 entries - 1 heats. As at 16/3/2024</h2>
 <p>Danel Jansen Van Rensburg (F34),Birchfield Harriers,60.39</p>
 <p>Dominic Flavell (M34),Team Bath,66</p>
+<p>Michael Callan (M23),Team Bath,65.35</p>
+
 
 </article>
 </div>
+<script >
+//get a reference to the back button and add event listener 
+var backBtn = document.getElementById('backButton');
+backBtn.addEventListener('click', EntriesIndex);
+function EntriesIndex() {
+    window.location.assign("SandHEntriesIndex.html")
+}
+</script>
 </body>
 </html>
