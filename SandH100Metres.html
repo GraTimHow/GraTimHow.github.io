@@ -18,10 +18,11 @@ article {
 }
 </style>
 </head>
+<input type="button" id="backButton" class="button button1" value="Back to Index"/>
 <body> 
 <div class="container">
 <article>
-<h2>100 Metres - 99 entries - 13 heats. As at 14/3/2024</h2>
+<h2>100 Metres - 98 entries - 13 heats. As at 18/3/2024</h2>
 <p>Aaliyah  Nicoll  (M15),Yate & District AC,NT</p>
 <p>Adam Durran (M17),North Somerset AC,11.5</p>
 <p>Alex Fields (M35),Bristol & West AC,12.38</p>
@@ -49,7 +50,6 @@ article {
 <p>Eleri  Brown  (F17),Neath Harriers,13.3</p>
 <p>Erin Blackmore (F15),Marlborough AC,15.7</p>
 <p>Evey Thomas (F17),Unattached,13.7</p>
-<p>Evie Aitchison (F20),Neath Harriers,13.5</p>
 <p>Evie Patterson (F15),Marlborough AC,13.6</p>
 <p>Fayola  Aliyu (F15),Bristol & West AC,NT</p>
 <p>Finnley Austin (M15),Neath Harriers,NT</p>
@@ -121,8 +121,17 @@ article {
 <p>Youssef Rabhi (M23),Swansea Harriers,11.3</p>
 <p>Zac Roach (M17),Cardiff AAC,12.44</p>
 <p>Zack Wigginton  (M17),Yate & District AC,NT</p>
+
 <p></p>
 </article>
 </div>
+<script >
+//get a reference to the back button and add event listener 
+var backBtn = document.getElementById('backButton');
+backBtn.addEventListener('click', EntriesIndex);
+function EntriesIndex() {
+    window.location.assign("SandHEntriesIndex.html")
+}
+</script>
 </body>
 </html>
