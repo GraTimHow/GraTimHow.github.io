@@ -122,8 +122,8 @@
 <p class="displayPicked" id="event3Entered"></p>
 <h3 id="feeSoFar"></h3>
 </pre>
-<input type="button" id="contButton" value="Continue"/>
-<input type="button" id="backButton" value="Go back"/>
+<input type="button" id="contButton" class="button button1" value="Continue"/>
+<input type="button" id="backButton" class="button button1"value="Go back"/>
 
 </nav>
 
@@ -164,7 +164,8 @@
 
 <form id="contactform" action="https://formspree.io/f/mgedvdqz" method="POST">
 
-  <input type="submit" value="Send">   <button type="button" onclick="StartPage()">Abort</button>
+  <input type="submit" value="Send" class="button button1"> 
+  <button type="button" class="button button1" onclick="StartPage()">Abort</button>
   <input type="text" id="myEntry" name="entry" placeholder="Entry details" size = "90" readonly style="display:none">
   <input type="hidden" name="_next" value="SandHInfoPage.html" />
   <input type="hidden" name="_subject" value="Sprints and Hurdles Entry" />
