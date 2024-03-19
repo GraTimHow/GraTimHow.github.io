@@ -19,10 +19,11 @@ article {
 }
 </style>
 </head>
+<input type="button" id="backButton" class="button button1" value="Back to Index"/>
 <body> 
 <div class="container">
 <article>
-<h2>200 Metres - 98 entries - 13 heats. As at 15/3/2024</h2>
+<h2>200 Metres - 100 entries - 13 heats. As at 19/3/2024</h2>
 <p>Aaliyah  Nicoll  (M15),Yate & District AC,NT</p>
 <p>Adam Durran (M17),North Somerset AC,23.4</p>
 <p>Alex Fields (M35),Bristol & West AC,24.57</p>
@@ -30,6 +31,7 @@ article {
 <p>Alice Bassett (F17),Team Bath,29.8</p>
 <p>Amari Cambridge (F15),Gloucester AC,27.2</p>
 <p>Amber Tandy (F15),Gloucester AC,27.31</p>
+<p>Anais Shepperd (F17),Cardiff AAC,26.14</p>
 <p>Anna Wright  (F15),Taunton AC,28.37</p>
 <p>Annabel Gordon (F17),Yate & District AC,28.41</p>
 <p>Annabel Lee (F15),Yate & District AC,NT</p>
@@ -47,6 +49,7 @@ article {
 <p>Cerys Lee (F34),Taunton AC,26</p>
 <p>Charlotte Bell (F17),Stroud & District AC,27.1</p>
 <p>Chizorom Imoh (F15),Bristol & West AC,NT</p>
+<p>Dan Trueman (M34),Stroud & District AC,21.57</p>
 <p>Daniel Webb (M17),Bristol & West AC,26.8</p>
 <p>Elana Murray (F17),Cardiff AAC,26.41</p>
 <p>Eleri  Brown  (F17),Neath Harriers,27.6</p>
@@ -126,6 +129,14 @@ article {
 </article>
 
 </div>
+<script >
+//get a reference to the back button and add event listener 
+var backBtn = document.getElementById('backButton');
+backBtn.addEventListener('click', EntriesIndex);
+function EntriesIndex() {
+    window.location.assign("SandHEntriesIndex.html")
+}
+</script>
 </body>
 
 </html>
