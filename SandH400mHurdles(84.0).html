@@ -18,6 +18,7 @@ article {
 }
 </style>
 </head>
+<input type="button" id="backButton" class="button button1" value="Back to Index"/>
 <body> 
 <div class="container">
 <article>
@@ -26,5 +27,13 @@ article {
 
 </article>
 </div>
+<script >
+//get a reference to the back button and add event listener 
+var backBtn = document.getElementById('backButton');
+backBtn.addEventListener('click', EntriesIndex);
+function EntriesIndex() {
+    window.location.assign("SandHEntriesIndex.html")
+}
+</script>
 </body>
 </html>
