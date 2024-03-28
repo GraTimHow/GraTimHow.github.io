@@ -104,6 +104,7 @@ article {
   background-color: lightgrey; 
   color: black; 
   border: 2px solid #04AA6D;
+  width: 130px;
 }
 
 .button1:hover {
