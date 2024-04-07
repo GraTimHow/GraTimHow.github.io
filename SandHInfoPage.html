@@ -1,18 +1,14 @@
 <!doctype html>
 <html>
 <head> 
-
 <title>
 Sprints & Hurdles Challenge
 </title>
-
 <link href="SandHStyleSheet.css" rel="stylesheet"/>
-
 <style>
 div.container {
     width: 100%;
 }
-
 article {
     float: left;
     max-width: 600px;
@@ -26,17 +22,19 @@ aside {
     padding: 1em;
     overflow: hidden;
 }
+
 </style>
 
 <script>
 
 function EnterPage() {
   // Entries are closed or Opening soon message
-  var closeDate = new Date("2024-03-25");
+  var closeDate = new Date("2024-04-06");
   var openDate = new Date("2024-02-05");
   var today = new Date();
   if (today > closeDate ) {
      document.getElementById("message").innerHTML = "<mark>* * * Entries are now closed * * * If you think you have entered and paid but not received a confirmation then email gratimhow@aol.com</mark>";
+     document.getElementById("enterBtn").disabled = true;
   }   else if (today > openDate ) {
      window.location.assign("SandHEntryPage.html")
   }  else {
@@ -60,7 +58,8 @@ window.location.assign("SandHEntriesIndex.html")
 
 <article>
 <p>Your entry will be processed and confirmed by email within 5 days of receipt of your payment. If you think you have entered and paid but not received a confirmation then email gratimhow@aol.com  
-<button type="button" class="button button1" onclick="EntryListPage()">Confirmed Entries</button></p>
+<button type="button" class="button button1" onclick="EntryListPage()">Confirmed Entries</button></p> 
+<a href="https://gratimhow.github.io/SandHEntryLists.pdf" download > Download Heats Schedule</a>
 <p>Entry closing date April 4th 2024 or sooner if the entry limit of 200 competitors is reached.</p>
 <p>Athletes must be age 10 or over on the day to be eligible to enter.</p>
 <p>Fees - 1 event £5, 2 events £8, 3 events £10.</p>
@@ -75,7 +74,7 @@ by the UKA Anti-Doping Rules and to submit to the authority of UK Anti-Doping in
 of the Anti-Doping Rules. The UKA Anti-Doping Rules apply to entrants participating in the sport of Athletics, for
 12 months from the date of entry, whether or not the entrant is a citizen of, or resident in, the UK.'</p>
 <p id="message">Click Enter Button to make an entry 
-<button type="button" class="button button1" onclick="EnterPage()">Enter</button>
+<button id="enterBtn" type="button" class="button button1" onclick="EnterPage()">Enter</button>
 
 </article>
 
