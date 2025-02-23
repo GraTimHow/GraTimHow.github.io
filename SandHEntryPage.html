@@ -160,8 +160,11 @@
 </div>
 
 <div id="exit-page" style="display:none;" > 
-<p>Click Send to submit entry or Cancel to go back.</p>
-
+<p>Click Send to submit entry or Cancel to go back. Do not send multiple entries.</p>
+<p>Entries will be confirmed by email within 5 days of receipt of your payment.</p>
+<h2 id="myFee">Your entry fee is £6</h2>
+<p>Payment by Bank transfer to a/c number 00112070 Sort Code 60-10-15 a/c name G Howell</p>
+<p>Add the Athlete name as a transaction reference.</p>
 <form id="contactform" action="https://formspree.io/f/mgedvdqz" method="POST">
   <input type="submit" value="Send" class="button button1"> 
   <button type="button" class="button button1" onclick="StartPage()"> Cancel</button>
@@ -170,10 +173,6 @@
   <input type="hidden" name="_subject" value="Sprints and Hurdles Entry" />
   <input type="text" name="_gotcha" style="display:none" />
 </form>
-
-<p>Entries will be confirmed by email within 5 days of receipt of your payment.</p>
-<h2 id="myFee">Your entry fee is £6</h2>
-<p>Payment by Bank transfer to a/c number 00112070 Sort Code 60-10-15 a/c name G Howell - with Athlete name as a transaction reference.</p>
 
 </div>
 
@@ -196,8 +195,8 @@ var i;
 category = 0;
 
 // Send back to Info page if entry window is not open, check here stops bypass of the Info page checks
-  var closeDate = new Date("2025-04-06");
-  var openDate = new Date("2025-02-08");
+  var closeDate = new Date("2025-04-13");
+  var openDate = new Date("2024-12-05");
   var today = new Date();
   if (today > closeDate || today < openDate ) {
      window.location.assign("SandHInfoPage.html")
