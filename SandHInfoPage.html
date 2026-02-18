@@ -25,14 +25,81 @@ aside {
 
 </style>
 
+<script>
+
+function EnterPage() {
+  // Entries are closed or Opening soon message
+  var closeDate = new Date("2026-04-04");
+  var openDate = new Date("2026-02-17");
+  var today = new Date();
+  if (today > closeDate ) {
+     document.getElementById("message").innerHTML = "<mark>* * * Entries are now closed * * * If you think you have entered and paid but not received a confirmation then email gratimhow@aol.com</mark>";
+     document.getElementById("enterBtn").disabled = true;
+  }   else if (today > openDate ) {
+     window.location.assign("SandHEntryPage.html")
+  }  else {
+     document.getElementById("message").innerHTML = "<mark>* * * Entries not yet open * * *</mark>";
+  }
+}
+
+function EntryListPage() {
+  // 
+window.location.assign("SandHEntriesIndex.html")
+}
+</script>
+
 </head>
 
 <body> 
-<h1>Sprints & Hurdles C26</h1>
-<h1>Sunday April 12th 2026</h1>
-<h2> </h2>
-<h2> </h2>
-<h2>* * * Entries will open later in February * * *</h2>
+<h2>Sprints & Hurdles C26 - L1 Licence OUT 26/051</h2>
+<h2>Sunday April 12th 2026, Yate Outdoor Sports Complex</h2>
+<h2></h2>
+<div class="container">
+
+<article>
+<p>Your entry will be processed and confirmed by email within 5 days of receipt of your payment. If you think you have entered and paid but not received a confirmation then email gratimhow@aol.com  
+. Events close when the number of heats is filled.</p><button type="button" class="button button1" onclick="EntryListPage()">Confirmed Entries</button></p> 
+<a href="https://gratimhow.github.io/SandHEntryLists.pdf" download > Download Heats Schedule</a>
+<p>Athletes must be age 10 or over on the day to be eligible to enter.</p>
+<p>Fees - 1 event £6, 2 events £10, 3 events £12.</p>
+<p>Payment by Bank transfer with Athlete name as a transaction reference to :- </p>
+<p>A/C Number 00112070 Sort Code 60-10-15 A/C Name G Howell</p> 
+<p> </p>
+<p>Collect numbers on the day. There are no Entries or Payments on the day.</p>
+<p>Once entries have closed, Heats seeded and Final timetable produced, entries will not be changed. Heats are run slowest to fastest.</p>
+
+<p>By entering you accept the following UKa Statement - 'All entrants shall be deemed to have made themselves familiar with, and agreed to be bound
+by the UKA Anti-Doping Rules and to submit to the authority of UK Anti-Doping in the application and enforcement
+of the Anti-Doping Rules. The UKA Anti-Doping Rules apply to entrants participating in the sport of Athletics, for
+12 months from the date of entry, whether or not the entrant is a citizen of, or resident in, the UK.'</p>
+<p id="message">Click Enter Button to make an entry 
+<button id="enterBtn" type="button" class="button button1" onclick="EnterPage()">Enter</button>
+
+</article>
+
+<aside>
+<h4>Provisional Timetable :-</h4>
+
+<ul id="eventList" >
+<li><a>12:30 - 70m Hurdles</a></li>
+<li><a>12:35 - 75m Hurdles</a></li>
+<li><a>12:45 - 80m Hurdles</a></li>
+<li><a>13:00 - 100m Hurdles</a></li>
+<li><a>13:15 - 110m Hurdles</a></li>
+<li><a>13:30 - 300m</a></li>
+<li><a>13:45 - 400m</a></li>
+<li><a>14:15 - 75m (U12/U14's)</a></li>
+<li><a>14:35 - 100m Para</a></li>
+<li><a>14:45 - 100m</a></li>
+<li><a>16:10 - 150m (U12/U14's)</a></li>
+<li><a>16:25 - 200m Para</a></li>
+<li><a>16:30 - 200m</a></li>
+<li><a>17:30 - 200m Hurdles</a></li>
+<li><a>17:45 - 300m Hurdles</a></li>
+<li><a>17:50 - 400m Hurdles</a></li>
+</ul>
+</aside>
+</div>
 </body>
 
 </html>
