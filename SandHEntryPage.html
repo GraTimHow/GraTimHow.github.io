@@ -12,7 +12,8 @@
 
 <div id="Common"> 
    <h2>Sprints & Hurdles C26</h2>
-   <h2>April 12th 2026, Yate Outdoor Sports Complex</h2>
+   <h2>Yate Outdoor Sports Complex</h2>
+   <h2>April 12th 2026</h2>
 </div>
 
 <div id="entry-page">
@@ -110,72 +111,94 @@
   <option value="UGLO">University of Gloucestershire</option>
   <option value="UWE">University of West England</option>
   <option value="WNCH">Winchester & District AC</option>
-  <option value="WSEH">Windsor Slough Eton Hounslow</option>
+  <option value="WSEH">Windsor Slough Eaton Hounslow</option>
   <option value="WORC">Worcester AC</option>
   <option value="WREX">Wrexham AC</option>
   <option value="YAT">Yate & District AC</option>
   <option value="YOLY">Yeovil Olympiads</option>
   </select>
 <br/>
-<p class="displayPicked" id="event1Entered"></p>
-<p class="displayPicked" id="event2Entered"></p>
-<p class="displayPicked" id="event3Entered"></p>
-<h3 id="feeSoFar"></h3>
+
 </pre>
-<input type="button" id="contButton" class="button button1" value="Continue"/>
-<input type="button" id="backButton" class="button button1" value="Go back"/>
-
+<input type="button" id="backButton" class="button button2" value="Cancel"/>
+<input type="button" id="eventsButton" class="button button1" value="Select Events"/>
 </nav>
-
-<article>
-<h4>Select / de-select up to 3 events:</h4>
-
-<ul id="eventList" >
-<li><a data-eventNum="1" data-description = "70m Hurdles (68.5)" id="70MH685" class="available">70m Hurdles(68.0)</a></li>
-<li><a data-eventNum="2" data-description = "75m Hurdles (68.5)" id="75MH685" class="available">75mHurdles(68.0)</a></li>
-<li><a data-eventNum="3" data-description = "80m Hurdles (76.2)" id="80MH762" class="available">80m Hurdles(76.0)</a></li>
-<li><a data-eventNum="4" data-description = "100m Hurdles (76.0)" id="100MH760" class="available">100m Hurdles(76.0)</a></li>
-<li><a data-eventNum="5" data-description = "100m Hurdles (84.0)" id="100MH840" class="unavailable">100m Hurdles(84.0)</a></li>
-<li><a data-eventNum="6" data-description = "110m Hurdles (91.0)" id="110MH910" class="available">110m Hurdles(91.0)</a></li>
-<li><a data-eventNum="7" data-description = "110m Hurdles (99.0)" id="110MH990" class="available">110m Hurdles(99.0)</a></li>
-<li><a data-eventNum="8" data-description = "110m Hurdles (106.7)" id="110MH1067" class="available">110m Hurdles(106.0)</a></li>
-<li><a data-eventNum="9" data-description = "300 Metres" id="300M" class="available">300m</a></li>
-<li><a data-eventNum="10" data-description = "400 Metres" id="400M" class="available">400m</a></li>
-<li><a data-eventNum="11" data-description = "75 Metres" id="75M" class="unavailable">75m (U12/U14's)</a></li>
-<li><a data-eventNum="12" data-description = "100 Metres Para" id="100MP" class="available">100m Para</a></li>
-<li><a data-eventNum="13" data-description = "100 Metres" id="100M" class="unavailable">100m</a></li>
-<li><a data-eventNum="14" data-description = "150 Metres" id="150M" class="unavailable">150m (U12/U14's)</a></li>
-<li><a data-eventNum="15" data-description = "200 Metres Para" id="200MP" class="available">200m Para</a></li>
-<li><a data-eventNum="16" data-description = "200 Metres" id="200M" class="unavailable">200m</a></li>
-<li><a data-eventNum="17" data-description = "200m Hurdles (68.5)" id="200MH685" class="unavailable">200m Hurdles(68.5)</a></li>
-<li><a data-eventNum="18" data-description = "200m Hurdles (76.2)" id="200MH762" class="available">200m Hurdles(76.2)</a></li>
-<li><a data-eventNum="19" data-description = "300m Hurdles (76.2)" id="300MH762" class="available">300m Hurdles(76.2)</a></li>
-<li><a data-eventNum="20" data-description = "400m Hurdles (76.2)" id="400MH762" class="available">400m Hurdles(76.2)</a></li>
-<li><a data-eventNum="21" data-description = "400m Hurdles (84.0)" id="400MH840" class="available">400m Hurdles(84.0)</a></li>
-<li><a data-eventNum="22" data-description = "400m Hurdles (91.4)" id="400MH(910)" class="available">400m Hurdles(91.0)</a></li>
-</ul>
-
-</article>
 
 </form>
 
 </div>
 
+<div id="events-page" class="a" style="display:none;" > 
+
+<h4>Select / de-select up to 3 events:</h4>
+<!-- Comment Event list all set initially to unavailable and modified during age category validation -->
+<ul id="eventList" >
+<li><a data-eventNum="1" data-description = "70m Hurdles (68.5)" id="70MH685" class="unavailable">70m Hurdles(68.0)</a></li>
+<li><a data-eventNum="2" data-description = "75m Hurdles (68.5)" id="75MH685" class="unavailable">75mHurdles(68.0)</a></li>
+<li><a data-eventNum="3" data-description = "80m Hurdles (76.2)" id="80MH762" class="unavailable">80m Hurdles(76.0)</a></li>
+<li><a data-eventNum="4" data-description = "100m Hurdles (76.0)" id="100MH760" class="unavailable">100m Hurdles(76.0)</a></li>
+<li><a data-eventNum="5" data-description = "100m Hurdles (84.0)" id="100MH840" class="unavailable">100m Hurdles(84.0)</a></li>
+<li><a data-eventNum="6" data-description = "110m Hurdles (91.0)" id="110MH910" class="unavailable">110m Hurdles(91.0)</a></li>
+<li><a data-eventNum="7" data-description = "110m Hurdles (99.0)" id="110MH990" class="unavailable">110m Hurdles(99.0)</a></li>
+<li><a data-eventNum="8" data-description = "110m Hurdles (106.7)" id="110MH1067" class="unavailable">110m Hurdles(106.0)</a></li>
+<li><a data-eventNum="9" data-description = "300 Metres" id="300M" class="unavailable">300m</a></li>
+<li><a data-eventNum="10" data-description = "400 Metres" id="400M" class="unavailable">400m</a></li>
+<li><a data-eventNum="11" data-description = "75 Metres" id="75M" class="unavailable">75m (U12/U14's)</a></li>
+<li><a data-eventNum="12" data-description = "100 Metres Para" id="100MP" class="unavailable">100m Para</a></li>
+<li><a data-eventNum="13" data-description = "100 Metres" id="100M" class="unavailable">100m</a></li>
+<li><a data-eventNum="14" data-description = "150 Metres" id="150M" class="unavailable">150m (U12/U14's)</a></li>
+<li><a data-eventNum="15" data-description = "200 Metres Para" id="200MP" class="unavailable">200m Para</a></li>
+<li><a data-eventNum="16" data-description = "200 Metres" id="200M" class="unavailable">200m</a></li>
+<li><a data-eventNum="17" data-description = "200m Hurdles (68.5)" id="200MH685" class="unavailable">200m Hurdles(68.5)</a></li>
+<li><a data-eventNum="18" data-description = "200m Hurdles (76.2)" id="200MH762" class="unavailable">200m Hurdles(76.2)</a></li>
+<li><a data-eventNum="19" data-description = "300m Hurdles (76.2)" id="300MH762" class="unavailable">300m Hurdles(76.2)</a></li>
+<li><a data-eventNum="20" data-description = "400m Hurdles (76.2)" id="400MH762" class="unavailable">400m Hurdles(76.2)</a></li>
+<li><a data-eventNum="21" data-description = "400m Hurdles (84.0)" id="400MH840" class="unavailable">400m Hurdles(84.0)</a></li>
+<li><a data-eventNum="22" data-description = "400m Hurdles (91.4)" id="400MH(910)" class="unavailable">400m Hurdles(91.0)</a></li>
+</ul>
+
+<input type="button" id="exitButton" class="button button2" value="Cancel"/>
+<input type="button" id="confirmButton" class="button button1" value="Confirm" style="visibility:hidden"/>
+
+<p class="displayPicked" id="event1Entered"></p>
+<p class="displayPicked" id="event2Entered"></p>
+<p class="displayPicked" id="event3Entered"></p>
+</div>
+
 <div id="exit-page" style="display:none;" > 
-<p>Click Send to submit entry or Cancel to go back. Do not send multiple entries.</p>
-<p>Entries will be confirmed by email within 5 days of receipt of your payment.</p>
+
+<p>Confirmation by email after payment is received.</p>
 <h2 id="myFee">Your entry fee is £6</h2>
-<p>Payment by Bank transfer to a/c number 00112070 Sort Code 60-10-15 a/c name G Howell</p>
-<p>Add the Athlete name as a transaction reference.</p>
-<p>Entries without payment within 7 days are deleted.</p>
+<p>Payment by Bank transfer to :-</p>
+<p>A/c number:- 00112070 </p>
+<p>Sort Code:- 60-10-15 </p>
+<p>A/c name:- G Howell </p>
+
+<div>
+Use transaction reference <p class="ex1"; id="dspAthlete"</p>
+</div>
+<p id="dspAthlete"></p>
+
 <form id="contactform" action="https://formspree.io/f/mgedvdqz" method="POST">
-  <input type="submit" value="Send" class="button button1"> 
-  <button type="button" class="button button1" onclick="StartPage()"> Cancel</button>
   <input type="text" id="myEntry" name="entry" placeholder="Entry details" size = "90" readonly style="display:none">
+  <button type="button" class="button button2" onclick="StartPage()"> Cancel</button>
+  <input type="button" id="contButton" class="button button1" value="Submit Entry Details" />
   <input type="hidden" name="_next" value="SandHInfoPage.html" />
   <input type="hidden" name="_subject" value="Sprints and Hurdles Entry" />
   <input type="text" name="_gotcha" style="display:none" />
 </form>
+
+<p class="bold" style="color:Green;" id="dspName"></p>
+<p class="bold" style="color:Green;" id="dspDob"></p>
+<p class="bold" style="color:Green;" id="dspGender"></p>
+<p class="bold" style="color:Green;" id="dspEmail"></p>
+<p class="bold" style="color:Green;" id="dspTelephone"></p>
+<p class="bold" style="color:Green;" id="dspNGB"></p>
+<p class="bold" style="color:Green;" id="dspIPC"></p>
+<p class="bold" style="color:Green;" id="dspClub"></p>
+<p class="bold" style="color:Green;" id="dspEvent1"></p>
+<p class="bold" style="color:Green;" id="dspEvent2"></p>
+<p class="bold" style="color:Green;" id="dspEvent3"></p>
 
 </div>
 
@@ -197,24 +220,50 @@ var performances = [];
 var i;
 category = 0;
 
+//
+// When events are full set the relevant element to unavailable, this blocks the
+// age category validation from making events available. Note the Event number is
+// one greater than the index number of this list
+//
+const eventdsp = [];
+eventdsp[0]= "available";
+eventdsp[1]= "available"; 
+eventdsp[2]= "available"; 
+eventdsp[3]= "available";
+eventdsp[4]= "available";
+eventdsp[5]= "available"; 
+eventdsp[6]= "available";
+eventdsp[7]= "available";
+eventdsp[8]= "available"; 
+eventdsp[9]= "available"; 
+eventdsp[10]= "unavailable"; 
+eventdsp[11]= "available"; 
+eventdsp[12]= "unavailable";
+eventdsp[13]= "unavailable"; 
+eventdsp[14]= "available"; 
+eventdsp[15]= "unavailable"; 
+eventdsp[16]= "unavailable"; 
+eventdsp[17]= "available"; 
+eventdsp[18]= "available"; 
+eventdsp[19]= "available"; 
+eventdsp[20]= "available"; 
+eventdsp[21]= "available";
+
 // Send back to Info page if entry window is not open, check here stops bypass of the Info page checks
   var closeDate = new Date("2026-04-04");
-  var openDate = new Date("2026-02-17");
+  var openDate = new Date("2026-02-07");
   var today = new Date();
   if (today > closeDate || today < openDate ) {
      window.location.assign("SandHInfoPage.html")
   }  
 
-// put an event listener on the events list items
-eventList = document.getElementById("eventList");
-events = eventList.querySelectorAll("li a");
-for (i=0; i<events.length; i++) {
-  events[i].addEventListener("click", eventPick);
-}
-
 //get a reference to the back button and add event listener 
 var backBtn = document.getElementById('backButton');
 backBtn.addEventListener('click', InfoPage);
+
+//get a reference to the events next button and add event listener 
+var eventsBtn = document.getElementById('eventsButton');
+eventsBtn.addEventListener('click', firstDetails);
 
 //
 //Continue button clicked
@@ -239,6 +288,18 @@ function EntryDetail() {
         else if (totEvents == 3) {var entryFee = "£12";}
         else {var entryFee = "£6";}
         document.getElementById("myFee").innerHTML = "Your entry fee is " + entryFee;
+        document.getElementById("dspAthlete").innerHTML = forename + " " + surname;
+        //
+        // Athlete details
+        document.getElementById("dspName").innerHTML = "Name     : " + forename + " " + surname;
+        document.getElementById("dspDob").innerHTML = "Date of birth     : " + dobString;
+        document.getElementById("dspGender").innerHTML = "Gender     : " + gender;
+        document.getElementById("dspEmail").innerHTML = "Email     : " + email;
+        document.getElementById("dspTelephone").innerHTML = "Telephone     : " + telephone;
+        document.getElementById("dspNGB").innerHTML = "NGB number     : " + ngbnum;
+        document.getElementById("dspIPC").innerHTML = "IPC class     : " + IPCcat;
+        document.getElementById("dspClub").innerHTML = "Club     : " + clubDesc;
+
         //
         //Create the .csv string for the Formspree form 
         var detailString = forename + ',' + surname + ',' + gender + category   + ',' 
@@ -265,7 +326,7 @@ function EntryDetail() {
         //Populate the Exit page form
         var contactform = document.getElementById('contactform');
         document.getElementById("myEntry").defaultValue = detailString;
-        document.getElementById("entry-page").style.display = "none";
+        document.getElementById("events-page").style.display = "none";
         document.getElementById("exit-page").style.display = "block";
     } else {
       alert("Please select at least one event.");
@@ -275,32 +336,13 @@ function EntryDetail() {
 function InfoPage() {
    window.location.assign("SandHInfoPage.html")
 }
-/////////////////////////////
-//event picker pre function//
-/////////////////////////////
-function eventPick() {
+
+//event picker function
+function eventPicker() {
   eventNum = this.attributes["data-eventNum"].value; 
   eventDesc = this.attributes["data-description"].value; 
   eventId = this.attributes.id.value;  
   eventIdValue = document.getElementById(eventId);
-  //
-  // if category has been determined then athlete details have
-  // been entered and checked otherwise do the check.
-  //
-  if (category > 0) {
-    eventPicker();
-  } else {
-    if (firstDetails()) {
-      eventPicker();
-      //get a reference to the Continue button and add event listener 
-      myBtn = document.getElementById('contButton');
-      myBtn.addEventListener('click', EntryDetail);
-    } 
-  }
-}
-
-//event picker function
-function eventPicker() {
 
 if (totEvents < 3) {
   //toggle elements of the Event list only if the event is available 
@@ -348,18 +390,25 @@ if (totEvents < 3) {
 document.getElementById("event1Entered").innerHTML = "";
 document.getElementById("event2Entered").innerHTML = "";
 document.getElementById("event3Entered").innerHTML = "";
+document.getElementById("dspEvent1").innerHTML = "";
+document.getElementById("dspEvent2").innerHTML = "";
+document.getElementById("dspEvent3").innerHTML = "";        
 
 if (totEvents >= 1) {
-  document.getElementById("event1Entered").innerHTML = eventsDesc[0] + " (" + performances[0] + ")";
+  document.getElementById("event1Entered").innerHTML = eventsDesc[0] + " Seed (" + performances[0] + ")";
   var entryFee = "£6";
+  document.getElementById("dspEvent1").innerHTML = eventsDesc[0] + " Seed (" + performances[0] + ")";
 }
 if (totEvents >= 2) {
-  document.getElementById("event2Entered").innerHTML = eventsDesc[1] + " (" + performances[1] + ")";
+  document.getElementById("event2Entered").innerHTML = eventsDesc[1] + " Seed (" + performances[1] + ")";
   var entryFee = "£10";
+  document.getElementById("dspEvent2").innerHTML = eventsDesc[1] + " Seed (" + performances[1] + ")";
+
 }
 if (totEvents == 3) {
-  document.getElementById("event3Entered").innerHTML = eventsDesc[2] + " (" + performances[2] + ")";
+  document.getElementById("event3Entered").innerHTML = eventsDesc[2] + " Seed (" + performances[2] + ")";
   var entryFee = "£12";
+  document.getElementById("dspEvent3").innerHTML = eventsDesc[2] + " Seed (" + performances[2] + ")";
 }
 
 //Set the display element Id value
@@ -519,6 +568,12 @@ function firstDetails() {
   clubDesc = e.options[e.selectedIndex].text;
   // Calling validation function
   if (validation()) {
+    document.getElementById("entry-page").style.display = "none";
+    document.getElementById("events-page").style.display = "block";
+    //get a reference to the exit button and add event listener 
+    var exitBtn = document.getElementById('exitButton');
+    exitBtn.addEventListener('click', InfoPage);
+
     forename = ucase(forename);
     surname = ucase(surname);
     gender = ucase(gender);
@@ -558,151 +613,126 @@ function firstDetails() {
     //
     // determine the event availability here, note the i incrementing index is equal to 1 less than the event number
     //
+
     eventList = document.getElementById("eventList");
     events = eventList.querySelectorAll("li a");
     for (i=0; i<events.length; i++) {
-      // 400M eligibility Under 12/14's not allowed
-      if ((category === 12 || category === 14) && i == 9) {
-        events[i].className = "unavailable";
-        events[i].removeEventListener("click", eventPick);
-      }
-      // 100m, 200m, 300M eligibility Under 12's not allowed
-      if (category === 12 && (i == 8 || i == 12 || i == 15)) {
-        events[i].className = "unavailable";
-        events[i].removeEventListener("click", eventPick);
-      }
-      // 75M eligibility only U12/U14's allowed
-      if (category !== 12 && category !== 14 && i == 10) {
-        events[i].className = "unavailable";
-        events[i].removeEventListener("click", eventPick);
-      }
-      // 150M eligibility only U12/U14's allowed
-      if (category !== 12 && category !== 14 && i == 13) {
-        events[i].className = "unavailable";
-        events[i].removeEventListener("click", eventPick);
-      }
-      // 100M Para eligibility need a Para category entered
-      if ((IPCcat === null || IPCcat.trim() === "") && i == 11) {
-        events[i].className = "unavailable";
-        events[i].removeEventListener("click", eventPick);
-      }
-      // 200M Para eligibility need a Para category entered
-      if ((IPCcat === null || IPCcat.trim() === "") && i == 14) {
-        events[i].className = "unavailable";
-        events[i].removeEventListener("click", eventPick);
-      }
-      // Sprint Hurdles eligibility (Event Id's 1 to 8)
-      if (i >= 0 && i <= 7) {
-        // Under 12 Females allowed 70mH
-        if (category === 12 && gender === "F" && i != 0) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
+      if (eventdsp[i]=== "available") {
+        // 100M Para eligibility need a Para category entered
+        if ((IPCcat != null && IPCcat.trim() != "") && i === 11) {
+          events[i].className = "available";
+          events[i].addEventListener("click", eventPicker);
         }
-        // Under 12 Males and U14 Females allowed 75mH
-        if (((category === 12 && gender === "M") || (category === 14 && gender === "F")) && i != 1) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
+        // 200M Para eligibility need a Para category entered
+        if ((IPCcat != null && IPCcat.trim() != "") && i === 14) {
+          events[i].className = "available";
+          events[i].addEventListener("click", eventPicker);
         }
-        // Under 14 Males and Under 16 Females allowed 80mH
-        if (((category === 14 && gender === "M") || (category === 16 && gender === "F")) && i != 2) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
-        }
-        // Under 18 Females allowed 100mH(76.2)
-        if (category === 18 && gender === "F" && i != 3) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
-        }
-        // Under 16 Males allowed 100mH(84.0)
-        if (category === 16 && gender === "M" && i != 4) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
-        }
-        // Under 20 Females allowed 100mH(84.0)
-        if (category === 20 && gender === "F" && i != 4) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
-        }
-        // Under 23 Females allowed 100mH(84.0)
-        if (category === 23 && gender === "F" && i != 4) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
-        }
-        // Senior Females allowed 100mH(84.0)
-        if (category >= 34 && gender === "F" && i != 4) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
-        }
-        // Under 18 Males allowed 110mH(91.0)
-        if (category === 18 && gender === "M" && i != 5) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
-        }
-        // Under 20 Males allowed 110mH(99.0)
-        if (category === 20 && gender === "M" && i != 6) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
-        }
-        // Under 23 Males allowed 110mH(106.0)
-        if (category === 23 && gender === "M" && i != 7) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
-        }
-        // Senior Males allowed 110mH(106.0)
-        if (category >= 34 && gender === "M" && i != 7) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
-        }
-      }
-     // Long Hurdles eligibility (Events 17 to 22)
-      if (i >= 16 && i <= 21) {
-        // Under 12 Females not allowed 
+        // U12 Females - valid events
         if (category === 12 && gender === "F" ) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
+          if ( i === 0 || i === 10 || i === 13 ) {
+            if (eventdsp[i]=== "available") {
+              events[i].className = "available";
+              events[i].addEventListener("click", eventPicker);
+            }
+          } 
         }
-        // Under 12 Males not allowed 
+        // U12 Males - valid events
         if (category === 12 && gender === "M" ) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
+          if ( i === 1 || i === 10 || i === 13 ) {
+            if (eventdsp[i]=== "available") {
+              events[i].className = "available";
+              events[i].addEventListener("click", eventPicker);
+            }
+          } 
         }
-        // Under 14 Females only allowed 200mH(68.5)
-        if (category === 14 && gender === "F" && i != 16) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
+        // U14 Females - valid events
+        if (category === 14 && gender === "F" ) {
+          if ( i === 1 || i === 8 || i === 12 || i === 15 || i === 17 ) {
+            if (eventdsp[i]=== "available") {
+              events[i].className = "available";
+              events[i].addEventListener("click", eventPicker);
+            }
+          } 
         }
-        // Under 14 Males only allowed 200mH (76.2)
-        if (category === 14 && gender === "M" && i != 17) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
+        // U14 Males - valid events
+        if (category === 14 && gender === "M" ) {
+          if ( i === 2 || i === 8 || i === 12 || i === 15 || i === 17 ) {
+            if (eventdsp[i]=== "available") {
+              events[i].className = "available";
+              events[i].addEventListener("click", eventPicker);
+            }
+          } 
         }
-        // Under 16 Females only allowed 300mH
-        if (category === 16 && gender === "F" && i != 18) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
+        // U16 Females - valid events
+        if (category === 16 && gender === "F" ) {
+          if ( i === 2 || i === 8 || i === 9 || i === 12 || i === 15 || i === 18 ) {
+            if (eventdsp[i]=== "available") {
+              events[i].className = "available";
+              events[i].addEventListener("click", eventPicker);
+            }
+          } 
         }
-        // Under 16 Males only allowed 300mH
-        if (category === 16 && gender === "M" && i != 18) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
+        // U16 Males - valid events
+        if (category === 16 && gender === "M" ) {
+          if ( i === 3 || i === 8 || i === 9 || i === 12 || i === 15 || i === 18 ) {
+            if (eventdsp[i]=== "available") {
+              events[i].className = "available";
+              events[i].addEventListener("click", eventPicker);
+            }
+          } 
         }
-        // U18/U20/U23/Sen Females only allowed 400mH(76.0)
-        if (category >= 18 && gender === "F" && i != 19) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
+        // U18 Females - valid events
+        if (category === 18 && gender === "F" ) {
+          if ( i === 3 || i === 4 || i === 8 || i === 9 || i === 12 || i === 15 || i === 19 ) {
+            if (eventdsp[i]=== "available") {
+              events[i].className = "available";
+              events[i].addEventListener("click", eventPicker);
+            }
+          } 
         }
-        // U18 Males only allowed 400mH(84.0)
-        if (category === 18 && gender === "M" && i != 20) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
+        // U20/U23/Sen Females - valid events
+        if (category >= 20 && gender === "F" ) {
+          if ( i === 4 || i === 8 || i === 9 || i === 12 || i === 15 || i === 19 ) {
+            if (eventdsp[i]=== "available") {
+              events[i].className = "available";
+              events[i].addEventListener("click", eventPicker);
+            }
+          } 
         }
-        // U20/U23/Sen Males only allowed 400mH(91.0)
-        if (category >= 20 && gender === "M" && i != 21) {
-          events[i].className = "unavailable";
-          events[i].removeEventListener("click", eventPick);
+        // U18 Males - valid events
+        if (category === 18 && gender === "M" ) {
+          if ( i === 5 || i === 6 || i === 8 || i === 9 || i === 12 || i === 15 || i === 20 || i === 21) {
+            if (eventdsp[i]=== "available") {
+              events[i].className = "available";
+              events[i].addEventListener("click", eventPicker);
+            }
+          } 
+        }
+        // U20 Males - valid events
+        if (category === 20 && gender === "M" ) {
+          if ( i === 6 || i === 7 || i === 8 || i === 9 || i === 12 || i === 15 || i === 20 || i === 21) {
+            if (eventdsp[i]=== "available") {
+              events[i].className = "available";
+              events[i].addEventListener("click", eventPicker);
+            }
+          } 
+        }
+        // U23/Sen Males - valid events
+        if (category >= 23 && gender === "M" ) {
+          if ( i === 7 || i === 8 || i === 9 || i === 12 || i === 15 || i === 21) {
+            if (eventdsp[i]=== "available") {
+              events[i].className = "available";
+              events[i].addEventListener("click", eventPicker);
+            } 
+          } 
         }
       }
     }
+    //get a reference to the Confirm button and add event listener 
+    myBtn = document.getElementById('confirmButton');
+    myBtn.addEventListener('click', EntryDetail);
+    myBtn.style.visibility = "visible";
     return true;
   } else {
     return false;
