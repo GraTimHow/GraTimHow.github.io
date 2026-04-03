@@ -1,9 +1,9 @@
+body {font-family: arial; background: lightblue ;}
 
-body {font-family: arial;}
-
-h1, h2, h4 {color: rgb(0,150,0);}
-
-h3 {background-color: rgb(255,0,0);}
+h1 {color: rgb(0,150,0); font-size: 40px; margin:0px; line-height: 0.6}
+h2 {color: rgb(0,150,0); font-size: 30px; line-height: 0.6}
+h3 {background-color: rgb(255,0,0); font-size: 30px; line-height: 0.6}
+h4 {color: rgb(0,150,0); font-size: 20px; line-height: 0.6}
 
 /* classes */
 
@@ -13,7 +13,13 @@ h3 {background-color: rgb(255,0,0);}
 
 .unavailable { display: none; } 
 
-.displayPicked {display: inline ; background-color: rgb(255,0,0);}
+.displayPicked { background-color: yellow;}
+
+p.bold { font-weight: 800;}
+
+p.ex1 {color: green; font-weight: 800; display: inline;}
+
+div.a { width: 350px;}
 
 /* style back-ground colour red when hovering over events list */
 
@@ -23,9 +29,23 @@ a:hover { background-color: red;}
 
 :required {background-color: yellow;}
 
-div.container {
-    width: 100%;
+div.container { width: 100%;}
+
+/* Style buttons */
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
 }
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
 
 nav {
     float: left;
@@ -36,6 +56,14 @@ nav {
 }
 
 article {
+    float: left;
+    max-width: 600px;
+    margin: 0;
+    padding: 1em;
+    text-align: left;
+}
+
+aside {
     margin-left: 400px;
     padding: 1em;
     overflow: hidden;
@@ -87,27 +115,30 @@ article {
     visibility: visible;
 }
 
-.button {
-  border: none;
-  color: lightgrey;
-  padding: 6px 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin: 2px 1px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
 .button1 {
   background-color: lightgrey; 
   color: black; 
   border: 2px solid #04AA6D;
-  width: 130px;
+  width: 150px;
+  height: 40px;
+  font-weight: bold;
 }
 
 .button1:hover {
   background-color: #04AA6D;
+  color: black;
+}
+
+.button2 {
+  background-color: lightgrey; 
+  color: black; 
+  border: 2px solid #04AA6D;
+  width: 150px;
+  height: 40px;
+  font-weight: bold;
+}
+
+.button2:hover {
+  background-color: red;
   color: black;
 }
