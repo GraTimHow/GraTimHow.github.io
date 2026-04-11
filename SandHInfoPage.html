@@ -29,7 +29,7 @@ aside {
 
 function EnterPage() {
   // Entries are closed or Opening soon message
-  var closeDate = new Date("2026-04-06");
+  var closeDate = new Date("2026-04-10");
   var openDate = new Date("2026-02-17");
   var today = new Date();
   if (today > closeDate ) {
@@ -46,6 +46,10 @@ function EntryListPage() {
   // 
 window.location.assign("SandHEntriesIndex.html")
 }
+function ResultsListPage() {
+  // 
+window.location.assign("SandHResultsList.html")
+}
 </script>
 
 </head>
@@ -59,6 +63,7 @@ window.location.assign("SandHEntriesIndex.html")
 <article>
 <p>Your entry will be processed and confirmed by email within 5 days of receipt of your payment. If you think you have entered and paid but not received a confirmation then email gratimhow@aol.com. Entries without payment within 7 Days will be deleted.
 Events close when the number of heats is filled.</p><button type="button" class="button button1" onclick="EntryListPage()">Confirmed Entries</button></p> 
+</p><button type="button" class="button button1" onclick="ResultsListPage()">Results</button></p> 
 <a href="https://gratimhow.github.io/SandHEntryLists.pdf" download > Download Heats Schedule</a>
 <p>Athletes must be age 10 or over on the day to be eligible to enter.</p>
 <p>Fees - 1 event £6, 2 events £10, 3 events £12.</p>
